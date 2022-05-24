@@ -1,0 +1,3160 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* This is necessary to fill the content to the height of the page. */
+html, body, #content, .full-height{
+    height: 100%;
+    max-height: 100%;
+}
+
+/* first inline css block */
+.slick-slider{box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent}.slick-list,.slick-slider{position:relative;display:block}.slick-list{overflow:hidden;margin:0;padding:0}.slick-list:focus{outline:none}.slick-list.dragging{cursor:pointer;cursor:hand}.slick-slider .slick-list,.slick-slider .slick-track{-webkit-transform:translateZ(0);transform:translateZ(0)}.slick-track{position:relative;top:0;left:0;display:block}.slick-track:after,.slick-track:before{display:table;content:''}.slick-track:after{clear:both}.slick-loading .slick-track{visibility:hidden}.slick-slide{display:none;float:left;height:100%;min-height:1px}[dir=rtl] .slick-slide{float:right}.slick-slide img{display:block}.slick-slide.slick-loading img{display:none}.slick-slide.dragging img{pointer-events:none}.slick-initialized .slick-slide{display:block}.slick-loading .slick-slide{visibility:hidden}.slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent}.slick-arrow.slick-hidden{display:none}
+
+/* second inline css block */
+.slick-loading .slick-list{background:#fff url('./ajax-loader.gif') 50% no-repeat}@font-face{font-family:slick;font-weight:400;font-style:normal;src:url('./fonts/slick.eot');src:url('./fonts/slick.eot?#iefix') format('embedded-opentype'),url('./fonts/slick.woff') format('woff'),url('./fonts/slick.ttf') format('truetype'),url('./fonts/slick.svg#slick') format('svg')}.slick-next,.slick-prev{font-size:0;line-height:0;position:absolute;top:50%;display:block;width:20px;height:20px;padding:0;-webkit-transform:translateY(-50%);transform:translateY(-50%);cursor:pointer;border:none}.slick-next,.slick-next:focus,.slick-next:hover,.slick-prev,.slick-prev:focus,.slick-prev:hover{color:transparent;outline:none;background:transparent}.slick-next:focus:before,.slick-next:hover:before,.slick-prev:focus:before,.slick-prev:hover:before{opacity:1}.slick-next.slick-disabled:before,.slick-prev.slick-disabled:before{opacity:.25}.slick-next:before,.slick-prev:before{font-family:slick;font-size:20px;line-height:1;opacity:.75;color:#fff;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.slick-prev{left:-25px}[dir=rtl] .slick-prev{right:-25px;left:auto}.slick-prev:before{content:'\2190'}[dir=rtl] .slick-prev:before{content:'\2192'}.slick-next{right:-25px}[dir=rtl] .slick-next{right:auto;left:-25px}.slick-next:before{content:'\2192'}[dir=rtl] .slick-next:before{content:'\2190'}.slick-dotted.slick-slider{margin-bottom:30px}.slick-dots{position:absolute;bottom:-25px;display:block;width:100%;padding:0;margin:0;list-style:none;text-align:center}.slick-dots li{position:relative;display:inline-block;margin:0 5px;padding:0}.slick-dots li,.slick-dots li button{width:20px;height:20px;cursor:pointer}.slick-dots li button{font-size:0;line-height:0;display:block;padding:5px;color:transparent;border:0;outline:none;background:transparent}.slick-dots li button:focus,.slick-dots li button:hover{outline:none}.slick-dots li button:focus:before,.slick-dots li button:hover:before{opacity:1}.slick-dots li button:before{font-family:slick;font-size:6px;line-height:20px;position:absolute;top:0;left:0;width:20px;height:20px;content:'\2022';text-align:center;opacity:.25;color:#000;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.slick-dots li.slick-active button:before{opacity:.75;color:#000}
+
+/* third css style block */
+.react-color-picker,.react-color-picker *,.react-color-picker__hue-spectrum,.react-color-picker__hue-spectrum *,.react-color-picker__saturation-spectrum,.react-color-picker__saturation-spectrum *{box-sizing:border-box}.react-color-picker__hue-spectrum,.react-color-picker__saturation-spectrum{position:relative;display:inline-block}.react-color-picker__saturation-black,.react-color-picker__saturation-white{position:relative;width:100%;height:100%}.react-color-picker__saturation-white{background:linear-gradient(90deg,#fff,hsla(20,42%,65%,0))}.react-color-picker__saturation-black{background:linear-gradient(0deg,#000,hsla(20,42%,65%,0))}.react-color-picker__saturation-spectrum{cursor:pointer}.react-color-picker__saturation-spectrum .react-color-picker__saturation-drag{display:none;border:1px solid #fff;border-radius:10px;position:absolute;top:0;left:0}.react-color-picker__saturation-spectrum .react-color-picker__saturation-drag .react-color-picker__hue-inner,.react-color-picker__saturation-spectrum .react-color-picker__saturation-drag .react-color-picker__saturation-inner{position:relative;width:100%;height:100%;border:1px solid #000;border-radius:10px}.react-color-picker__hue-spectrum{background:linear-gradient(180deg,red 0,#ff0 17%,#0f0 33%,#0ff 50%,#00f 67%,#f0f 83%,red);cursor:pointer}.react-color-picker__hue-spectrum .react-color-picker__hue-drag{display:none;position:absolute;top:0;left:0;width:100%;border:1px solid #000}
+
+/* fourth css style block */
+
+#op-experience,
+.ExperienceCampaign {
+    height: 100%
+}
+@font-face {
+    font-family: CentraleSans;
+    weight: 500;
+    src: url('//s3.amazonaws.com/com.offerpop.experiences.prod.static/fonts/CentraleSans-Medium.woff') format('woff')
+}
+@font-face {
+    font-family: CentraleSans;
+    font-weight: 700;
+    src: url('//s3.amazonaws.com/com.offerpop.experiences.prod.static/fonts/CentraleSans-Bold.woff') format('woff')
+}
+@font-face {
+    font-family: CentraleSans;
+    font-weight: 200;
+    src: url('//s3.amazonaws.com/com.offerpop.experiences.prod.static/fonts/CentraleSans-Light.woff') format('woff')
+}
+@font-face {
+    font-family: CentraleSans;
+    font-weight: 300;
+    src: url('//s3.amazonaws.com/com.offerpop.experiences.prod.static/fonts/CentraleSans-Book.woff') format('woff')
+}
+.ExperienceCampaign a,
+.ExperienceCampaign abbr,
+.ExperienceCampaign acronym,
+.ExperienceCampaign address,
+.ExperienceCampaign applet,
+.ExperienceCampaign article,
+.ExperienceCampaign aside,
+.ExperienceCampaign audio,
+.ExperienceCampaign b,
+.ExperienceCampaign big,
+.ExperienceCampaign blockquote,
+.ExperienceCampaign body,
+.ExperienceCampaign canvas,
+.ExperienceCampaign caption,
+.ExperienceCampaign center,
+.ExperienceCampaign cite,
+.ExperienceCampaign code,
+.ExperienceCampaign dd,
+.ExperienceCampaign del,
+.ExperienceCampaign details,
+.ExperienceCampaign dfn,
+.ExperienceCampaign div,
+.ExperienceCampaign dl,
+.ExperienceCampaign dt,
+.ExperienceCampaign em,
+.ExperienceCampaign embed,
+.ExperienceCampaign fieldset,
+.ExperienceCampaign figcaption,
+.ExperienceCampaign figure,
+.ExperienceCampaign footer,
+.ExperienceCampaign form,
+.ExperienceCampaign h1,
+.ExperienceCampaign h2,
+.ExperienceCampaign h3,
+.ExperienceCampaign h4,
+.ExperienceCampaign h5,
+.ExperienceCampaign h6,
+.ExperienceCampaign header,
+.ExperienceCampaign hgroup,
+.ExperienceCampaign html,
+.ExperienceCampaign iframe,
+.ExperienceCampaign img,
+.ExperienceCampaign input,
+.ExperienceCampaign ins,
+.ExperienceCampaign kbd,
+.ExperienceCampaign label,
+.ExperienceCampaign legend,
+.ExperienceCampaign li,
+.ExperienceCampaign main,
+.ExperienceCampaign mark,
+.ExperienceCampaign menu,
+.ExperienceCampaign nav,
+.ExperienceCampaign object,
+.ExperienceCampaign ol,
+.ExperienceCampaign output,
+.ExperienceCampaign p,
+.ExperienceCampaign pre,
+.ExperienceCampaign q,
+.ExperienceCampaign ruby,
+.ExperienceCampaign s,
+.ExperienceCampaign samp,
+.ExperienceCampaign section,
+.ExperienceCampaign small,
+.ExperienceCampaign span,
+.ExperienceCampaign strike,
+.ExperienceCampaign strong,
+.ExperienceCampaign sub,
+.ExperienceCampaign summary,
+.ExperienceCampaign sup,
+.ExperienceCampaign table,
+.ExperienceCampaign tbody,
+.ExperienceCampaign td,
+.ExperienceCampaign textarea,
+.ExperienceCampaign tfoot,
+.ExperienceCampaign th,
+.ExperienceCampaign thead,
+.ExperienceCampaign time,
+.ExperienceCampaign tr,
+.ExperienceCampaign tt,
+.ExperienceCampaign u,
+.ExperienceCampaign ul,
+.ExperienceCampaign var,
+.ExperienceCampaign video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box
+}
+.ExperienceCampaign article,
+.ExperienceCampaign aside,
+.ExperienceCampaign details,
+.ExperienceCampaign figcaption,
+.ExperienceCampaign figure,
+.ExperienceCampaign footer,
+.ExperienceCampaign header,
+.ExperienceCampaign hgroup,
+.ExperienceCampaign menu,
+.ExperienceCampaign nav,
+.ExperienceCampaign section {
+    display: block
+}
+.ExperienceCampaign body {
+    line-height: 1
+}
+.ExperienceCampaign ol,
+.ExperienceCampaign ul {
+    list-style: none
+}
+.ExperienceCampaign blockquote,
+.ExperienceCampaign q {
+    quotes: none
+}
+.ExperienceCampaign blockquote:after,
+.ExperienceCampaign blockquote:before,
+.ExperienceCampaign q:after,
+.ExperienceCampaign q:before {
+    content: '';
+    content: none
+}
+.ExperienceCampaign table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+.ExperienceCampaign button,
+.ExperienceCampaign input,
+.ExperienceCampaign optgroup,
+.ExperienceCampaign select,
+.ExperienceCampaign textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit
+}
+.ExperienceCampaign button {
+    overflow: visible
+}
+.ExperienceCampaign button,
+.ExperienceCampaign select {
+    text-transform: none
+}
+.ExperienceCampaign button,
+.ExperienceCampaign html input[type=button],
+.ExperienceCampaign input[type=reset],
+.ExperienceCampaign input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+.ExperienceCampaign button[disabled],
+.ExperienceCampaign html input[disabled] {
+    cursor: default
+}
+.ExperienceCampaign button::-moz-focus-inner,
+.ExperienceCampaign input::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+.ExperienceCampaign input {
+    line-height: normal
+}
+.ExperienceCampaign input[type=checkbox],
+.ExperienceCampaign input[type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+.ExperienceCampaign textarea {
+    overflow: auto
+}
+.ExperienceCampaign h1 {
+    font-family: Freight Sans Semibold, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+    font-weight: 600;
+    font-size: 37px;
+    color: #4a8ed1;
+    line-height: 42px
+}
+.ExperienceCampaign h1.alternate {
+    font-family: Freight Sans Book, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+    font-weight: 400
+}
+.ExperienceCampaign h2 {
+    font-family: Helvetica Neue, Helvetica, Arial, Sans-Serif;
+    font-weight: 600;
+    color: #0f1019;
+    font-size: 21px;
+    line-height: 24px
+}
+.ExperienceCampaign h2.alternate {
+    font-weight: 400;
+    color: #848591
+}
+.ExperienceCampaign h3 {
+    font-family: Helvetica Neue, Helvetica, Arial, Sans-Serif;
+    font-weight: 600;
+    color: #0f1019;
+    font-size: 14px;
+    line-height: 20px
+}
+.ExperienceCampaign h3.alternate {
+    font-weight: 400
+}
+.ExperienceCampaign h3.uppercase {
+    font-weight: 400;
+    text-transform: uppercase
+}
+.ExperienceCampaign h4 {
+    font-family: Helvetica Neue, Helvetica, Arial, Sans-Serif;
+    font-weight: 600;
+    color: #0f1019;
+    font-size: 14px;
+    line-height: 18px
+}
+.ExperienceCampaign h4.alternate {
+    font-weight: 400
+}
+.ExperienceCampaign h4.uppercase {
+    font-weight: 400;
+    text-transform: uppercase
+}
+.ExperienceCampaign p {
+    font-family: Helvetica Neue, Helvetica, Arial, Sans-Serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #0f1019
+}
+.ExperienceCampaign a {
+    color: #4a8ed1
+}
+.ExperienceCampaign .text-error {
+    color: #0f1019;
+    color: #fd3c2b
+}
+.ExperienceCampaign .text-error,
+.ExperienceCampaign .text-list-dropdown {
+    font-family: Helvetica Neue, Helvetica, Arial, Sans-Serif;
+    font-weight: 400;
+    font-size: 14px
+}
+.ExperienceCampaign .text-list-dropdown {
+    color: #0f1019;
+    color: #848591;
+    line-height: 20px
+}
+.ExperienceCampaign .text-list-dropdown.text-list-dropdown-link {
+    color: #4a8ed1
+}
+.ExperienceCampaign .horizontal-rule-solid {
+    border-bottom: 1px solid #d6dce3
+}
+.ExperienceCampaign .horizontal-rule-dotted {
+    border-bottom: 1px dotted #848591
+}
+.ExperienceCampaign .column-rule-solid {
+    border-right: 1px solid #848591
+}
+.ExperienceCampaign .column-rule-dotted {
+    border-right: 1px dotted #848591
+}
+.ExperienceCampaign .platform-typography h1 {
+    font-family: CentraleSans, Arial, Sans-Serif;
+    font-weight: 500;
+    font-size: 37px;
+    color: #4a8ed1;
+    line-height: 42px
+}
+.ExperienceCampaign .platform-typography h1.alternate {
+    font-family: Helvetica Neue, Helvetica, Arial, Sans-Serif;
+    font-weight: 400
+}
+.ExperienceCampaign .platform-typography h2 {
+    font-family: CentraleSans, Arial, Sans-Serif;
+    font-weight: 500;
+    color: #4c535f;
+    font-size: 21px;
+    line-height: 24px
+}
+.ExperienceCampaign .platform-typography h2.alternate {
+    font-weight: 400;
+    color: #848591
+}
+.ExperienceCampaign .platform-typography h3 {
+    font-family: CentraleSans, Arial, Sans-Serif;
+    font-weight: 500;
+    color: #4c535f;
+    font-size: 14px;
+    line-height: 20px
+}
+.ExperienceCampaign .platform-typography h3.alternate {
+    font-weight: 400
+}
+.ExperienceCampaign .platform-typography h3.uppercase {
+    font-weight: 400;
+    text-transform: uppercase
+}
+.ExperienceCampaign .platform-typography h4 {
+    font-family: CentraleSans, Arial, Sans-Serif;
+    font-weight: 500;
+    color: #4c535f;
+    font-size: 11px;
+    line-height: 15px
+}
+.ExperienceCampaign .platform-typography h4.alternate {
+    font-weight: 400
+}
+.ExperienceCampaign .platform-typography h4.uppercase {
+    font-weight: 400;
+    text-transform: uppercase
+}
+.ExperienceCampaign .platform-typography p {
+    font-family: CentraleSans, Arial, Sans-Serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    color: #85858e
+}
+.ExperienceCampaign .platform-typography a {
+    color: #1dc2d1;
+    text-decoration: none
+}
+.ExperienceCampaign .platform-typography a:hover {
+    color: #1aaebb
+}
+.ExperienceCampaign .platform-typography .text-error {
+    font-size: 12px;
+    line-height: 15px;
+    color: #85858e;
+    color: #fd3c2b
+}
+.ExperienceCampaign .platform-typography .text-error,
+.ExperienceCampaign .platform-typography button,
+.ExperienceCampaign .platform-typography svg text,
+.ExperienceCampaign .platform-typography svg tspan {
+    font-family: CentraleSans, Arial, Sans-Serif;
+    font-weight: 300
+}
+.ExperienceCampaign .platform-typography button {
+    font-size: 11px
+}
+.ExperienceCampaign .platform-typography a,
+.ExperienceCampaign .platform-typography article,
+.ExperienceCampaign .platform-typography aside,
+.ExperienceCampaign .platform-typography div,
+.ExperienceCampaign .platform-typography em,
+.ExperienceCampaign .platform-typography fieldset,
+.ExperienceCampaign .platform-typography footer,
+.ExperienceCampaign .platform-typography form,
+.ExperienceCampaign .platform-typography h1,
+.ExperienceCampaign .platform-typography h2,
+.ExperienceCampaign .platform-typography h3,
+.ExperienceCampaign .platform-typography h4,
+.ExperienceCampaign .platform-typography h5,
+.ExperienceCampaign .platform-typography h6,
+.ExperienceCampaign .platform-typography header,
+.ExperienceCampaign .platform-typography hgroup,
+.ExperienceCampaign .platform-typography input,
+.ExperienceCampaign .platform-typography label,
+.ExperienceCampaign .platform-typography li,
+.ExperienceCampaign .platform-typography main,
+.ExperienceCampaign .platform-typography menu,
+.ExperienceCampaign .platform-typography nav,
+.ExperienceCampaign .platform-typography ol,
+.ExperienceCampaign .platform-typography p,
+.ExperienceCampaign .platform-typography pre,
+.ExperienceCampaign .platform-typography section,
+.ExperienceCampaign .platform-typography span,
+.ExperienceCampaign .platform-typography table,
+.ExperienceCampaign .platform-typography tbody,
+.ExperienceCampaign .platform-typography td,
+.ExperienceCampaign .platform-typography textarea,
+.ExperienceCampaign .platform-typography tfoot,
+.ExperienceCampaign .platform-typography th,
+.ExperienceCampaign .platform-typography thead,
+.ExperienceCampaign .platform-typography tr,
+.ExperienceCampaign .platform-typography ul {
+    font-family: CentraleSans, Arial, Sans-Serif
+}
+.ExperienceCampaign .modal {
+    display: block
+}
+.ExperienceCampaign .modal .modal-overlay {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    height: 100%;
+    width: 100%
+}
+.ExperienceCampaign .modal .modal-overlay .modal-content {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    background: #f0f2f5;
+    box-shadow: 5px 5px 5px 0 rgba(15, 16, 25, .4);
+    min-height: 100px;
+    max-height: 550px;
+    width: 720px;
+    margin-left: -360px;
+    border-radius: 0;
+    border: 0
+}
+.ExperienceCampaign .btn-primary-large {
+    display: inline-block;
+    cursor: pointer;
+    font-family: Freight Sans Semibold, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 8px 20px;
+    height: 36px;
+    font-size: 16px;
+    color: #fff;
+    background: #4a8ed1;
+    border: 1px solid #4a8ed1;
+    text-decoration: none
+}
+.ExperienceCampaign .btn-primary-large:hover {
+    background: #3179c0
+}
+.ExperienceCampaign .btn-primary-large[disabled] {
+    opacity: .4
+}
+.ExperienceCampaign .platform-btn-primary-large {
+    display: inline-block;
+    cursor: pointer;
+    font-family: Freight Sans Semibold, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 8px 20px;
+    height: 36px;
+    font-size: 12px;
+    color: #fff;
+    background: #1dc2d1;
+    border: 1px solid #1dc2d1;
+    text-decoration: none;
+    font-family: CentraleSans, Arial, Sans-Serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    outline: none
+}
+.ExperienceCampaign .platform-btn-primary-large:hover {
+    background: #1aaebb;
+    border: 1px solid #1aaebb
+}
+.ExperienceCampaign .platform-btn-primary-large[disabled] {
+    opacity: .4
+}
+.ExperienceCampaign .platform-btn-primary-medium {
+    display: inline-block;
+    cursor: pointer;
+    font-family: Freight Sans Semibold, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 6px 20px;
+    height: 29px;
+    font-size: 11px;
+    color: #fff;
+    background: #1dc2d1;
+    border: 1px solid #1dc2d1;
+    text-decoration: none;
+    font-family: CentraleSans, Arial, Sans-Serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    outline: none
+}
+.ExperienceCampaign .platform-btn-primary-medium:hover {
+    background: #1aaebb;
+    border: 1px solid #1aaebb
+}
+.ExperienceCampaign .platform-btn-primary-medium[disabled] {
+    opacity: .4
+}
+.ExperienceCampaign .platform-btn-primary-small {
+    display: inline-block;
+    cursor: pointer;
+    font-family: Freight Sans Semibold, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 4px 20px;
+    height: 23px;
+    font-size: 10px;
+    color: #fff;
+    background: #1dc2d1;
+    border: 1px solid #1dc2d1;
+    text-decoration: none;
+    font-family: CentraleSans, Arial, Sans-Serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    outline: none
+}
+.ExperienceCampaign .platform-btn-primary-small:hover {
+    background: #1aaebb;
+    border: 1px solid #1aaebb
+}
+.ExperienceCampaign .platform-btn-primary-small[disabled] {
+    opacity: .4
+}
+.ExperienceCampaign .platform-btn-secondary-large {
+    display: inline-block;
+    cursor: pointer;
+    font-family: Freight Sans Semibold, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 8px 20px;
+    height: 36px;
+    font-size: 12px;
+    color: #fff;
+    background: #a6a4ab;
+    border: 1px solid #a6a4ab;
+    text-decoration: none;
+    font-family: CentraleSans, Arial, Sans-Serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    outline: none
+}
+.ExperienceCampaign .platform-btn-secondary-large:hover {
+    background: #85858e;
+    border: 1px solid #85858e
+}
+.ExperienceCampaign input[type=date],
+.ExperienceCampaign input[type=text],
+.ExperienceCampaign textarea {
+    border-radius: 2px;
+    height: 27px;
+    color: #848591;
+    background: #fff;
+    border: 1px solid #85858e;
+    padding: 5px
+}
+.ExperienceCampaign input[type=date]:focus,
+.ExperienceCampaign input[type=text]:focus,
+.ExperienceCampaign textarea:focus {
+    outline: 0;
+    border: 1px solid #bdbdbd;
+    color: #404652
+}
+.ExperienceCampaign input[type=date].active,
+.ExperienceCampaign input[type=text].active,
+.ExperienceCampaign textarea.active {
+    border: 1px solid #bdbdbd;
+    color: #404652
+}
+.ExperienceCampaign input[type=date].error,
+.ExperienceCampaign input[type=text].error,
+.ExperienceCampaign textarea.error {
+    font-style: italic;
+    border: 1px solid #fd3c2b;
+    color: #fd3c2b;
+    background: #ffefee
+}
+.ExperienceCampaign input[type=date]:disabled,
+.ExperienceCampaign input[type=text]:disabled,
+.ExperienceCampaign textarea:disabled {
+    background-color: #efeff1
+}
+.ExperienceCampaign .dropdown-panel-container {
+    display: inline-block;
+    position: relative
+}
+.ExperienceCampaign .dropdown-panel-container input[type=text].active,
+.ExperienceCampaign .dropdown-panel-container input[type=text]:focus {
+    border-bottom: 0
+}
+.ExperienceCampaign .dropdown-panel-container .dropdown-panel {
+    position: absolute;
+    top: 25px;
+    bottom: 0;
+    min-height: 200px;
+    max-height: 250px;
+    overflow: auto;
+    min-width: 210px;
+    border: 1px solid #bdbdbd;
+    border-top: 0;
+    background: #fff;
+    box-shadow: 2px 2px 3px 0 hsla(0, 0%, 53%, .5);
+    color: #bdbdbd;
+    margin-top: -1px
+}
+.ExperienceCampaign .dropdown-panel-container .dropdown-panel.error {
+    background: #ffefee;
+    color: #fd3c2b;
+    border: 1px solid #fd3c2b
+}
+.ExperienceCampaign .dropdown-panel-container .dropdown-panel .dropdown-panel-text {
+    cursor: pointer;
+    padding: 5px
+}
+.ExperienceCampaign .dropdown-panel-container .dropdown-panel .dropdown-panel-text:hover {
+    color: #4a8ed1
+}
+.ExperienceCampaign .dropdown-btn {
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+    height: 25px;
+    border: 1px solid #85858e;
+    background: #f0f2f5;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    padding-top: 9px;
+    cursor: pointer;
+    margin-left: -1px
+}
+.ExperienceCampaign .dropdown-btn:after {
+    display: block;
+    content: " ";
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 7px solid #d6dce3;
+    margin: auto
+}
+.ExperienceCampaign .dropdown-btn.active,
+.ExperienceCampaign .dropdown-btn:hover {
+    border: 1px solid #bdbdbd
+}
+.ExperienceCampaign .dropdown-btn.active:after,
+.ExperienceCampaign .dropdown-btn:hover:after {
+    border-top: 7px solid #bdbdbd
+}
+.ExperienceCampaign .dropdown-btn.error {
+    border: 1px solid #fd3c2b;
+    background: #ff7e79
+}
+.ExperienceCampaign .dropdown-btn.error:after {
+    border-top: 7px solid #fd3c2b
+}
+.ExperienceCampaign .icon-add,
+.ExperienceCampaign .icon-add-inverse,
+.ExperienceCampaign .icon-close,
+.ExperienceCampaign .icon-delete,
+.ExperienceCampaign .icon-desktop,
+.ExperienceCampaign .icon-edit,
+.ExperienceCampaign .icon-edit-small,
+.ExperienceCampaign .icon-mobile,
+.ExperienceCampaign .icon-quiz-component,
+.ExperienceCampaign .icon-referral-component,
+.ExperienceCampaign .icon-report,
+.ExperienceCampaign .icon-share,
+.ExperienceCampaign .icon-tablet,
+.ExperienceCampaign .icon-transparent-gallery-component,
+.ExperienceCampaign .icon-trash,
+.ExperienceCampaign .toggle-checkbox,
+.ExperienceCampaign .toggle-switch {
+    background-image: url('//s3.amazonaws.com/com.offerpop.experiences.prod.static/images/product_icon_sprite.png');
+    background-repeat: no-repeat
+}
+.ExperienceCampaign .icon-close {
+    height: 22px;
+    width: 22px;
+    background-position: -394px -51px;
+    opacity: 1;
+    cursor: pointer
+}
+.ExperienceCampaign .icon-close:hover {
+    background-position: -394px -82px
+}
+.ExperienceCampaign .icon-delete {
+    height: 22px;
+    width: 22px;
+    background-position: -394px -216px;
+    opacity: .7;
+    cursor: pointer
+}
+.ExperienceCampaign .icon-delete:hover {
+    opacity: 1
+}
+.ExperienceCampaign .icon-add {
+    height: 23px;
+    width: 23px;
+    background-position: -394px -113px;
+    opacity: .25;
+    cursor: pointer
+}
+.ExperienceCampaign .icon-add:hover {
+    opacity: 1
+}
+.ExperienceCampaign .icon-add-inverse {
+    height: 25px;
+    width: 25px;
+    background-position: -393px -147px;
+    opacity: .55;
+    cursor: pointer
+}
+.ExperienceCampaign .icon-add-inverse:hover {
+    opacity: 1
+}
+.ExperienceCampaign .icon-edit-small {
+    height: 17px;
+    width: 17px;
+    background-position: -26px -64px;
+    opacity: 1;
+    cursor: pointer
+}
+.ExperienceCampaign .icon-edit-small.active,
+.ExperienceCampaign .icon-edit-small:hover {
+    background-position: -26px -88px
+}
+.ExperienceCampaign .icon-desktop {
+    height: 28px;
+    width: 33px;
+    background-position: -162px -57px;
+    opacity: .4;
+    cursor: pointer
+}
+.ExperienceCampaign .icon-desktop.active,
+.ExperienceCampaign .icon-desktop:hover {
+    background-position: -238px -57px;
+    opacity: 1
+}
+.ExperienceCampaign .icon-tablet {
+    height: 27px;
+    width: 23px;
+    background-position: -167px -98px;
+    opacity: .4;
+    cursor: pointer
+}
+.ExperienceCampaign .icon-tablet.active,
+.ExperienceCampaign .icon-tablet:hover {
+    background-position: -243px -98px;
+    opacity: 1
+}
+.ExperienceCampaign .icon-mobile {
+    height: 28px;
+    width: 19px;
+    background-position: -169px -138px;
+    opacity: .4;
+    cursor: pointer
+}
+.ExperienceCampaign .icon-mobile.active,
+.ExperienceCampaign .icon-mobile:hover {
+    background-position: -245px -138px;
+    opacity: 1
+}
+.ExperienceCampaign .icon-quiz-component,
+.ExperienceCampaign .icon-referral-component {
+    cursor: move
+}
+.ExperienceCampaign .icon-transparent-gallery-component {
+    height: 74px;
+    width: 69px;
+    background-position: -248px -568px;
+    opacity: 1;
+    cursor: pointer
+}
+.ExperienceCampaign .toggle-checkbox {
+    height: 16px;
+    width: 18px;
+    background-position: -536px -55px;
+    opacity: 1;
+    cursor: pointer
+}
+.ExperienceCampaign .toggle-checkbox.active {
+    background-position: -536px -76px
+}
+.ExperienceCampaign .toggle-checkbox.inactive {
+    pointer-events: none
+}
+.ExperienceCampaign .toggle-switch {
+    height: 21px;
+    width: 37px;
+    background-position: -380px -253px;
+    opacity: 1;
+    cursor: pointer
+}
+.ExperienceCampaign .toggle-switch.active {
+    background-position: -380px -278px
+}
+.ExperienceCampaign .icon-edit {
+    height: 24px;
+    width: 24px;
+    background-position: -386px -339px;
+    opacity: .5;
+    cursor: pointer
+}
+.ExperienceCampaign .icon-edit:hover {
+    opacity: 1
+}
+.ExperienceCampaign .icon-report {
+    height: 24px;
+    width: 24px;
+    background-position: -386px -389px;
+    opacity: .5;
+    cursor: pointer
+}
+.ExperienceCampaign .icon-report:hover {
+    opacity: 1
+}
+.ExperienceCampaign .icon-share {
+    height: 24px;
+    width: 24px;
+    background-position: -386px -439px;
+    opacity: .5;
+    cursor: pointer
+}
+.ExperienceCampaign .icon-share:hover {
+    opacity: 1
+}
+.ExperienceCampaign .icon-trash {
+    height: 24px;
+    width: 24px;
+    background-position: -386px -489px;
+    opacity: .5;
+    cursor: pointer
+}
+.ExperienceCampaign .icon-trash:hover {
+    opacity: 1
+}
+.ExperienceCampaign .component {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    text-align: center
+}
+.ExperienceCampaign .component img {
+    margin: auto
+}
+.ExperienceCampaign .clearfix:after {
+    content: " ";
+    clear: both;
+    display: block
+}
+.ExperienceCampaign .hidden {
+    display: none!important
+}
+.ExperienceCampaign .gradient-overflow {
+    position: relative
+}
+.ExperienceCampaign .gradient-overflow:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    pointer-events: none;
+    -ms-box-shadow: inset 0 -30px 40px -15px #000;
+    box-shadow: inset 0 -30px 40px -15px #000
+}
+.ExperienceCampaign .img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto
+}
+.ExperienceCampaign .pull-left {
+    float: left
+}
+.ExperienceCampaign .pull-right {
+    float: right
+}
+.ExperienceCampaign .Select {
+    position: relative
+}
+.ExperienceCampaign .Select,
+.ExperienceCampaign .Select div,
+.ExperienceCampaign .Select input,
+.ExperienceCampaign .Select span {
+    box-sizing: border-box
+}
+.ExperienceCampaign .Select.is-disabled>.Select-control {
+    background-color: #f9f9f9
+}
+.ExperienceCampaign .Select.is-disabled>.Select-control:hover {
+    box-shadow: none
+}
+.ExperienceCampaign .Select.is-disabled .Select-arrow-zone {
+    cursor: default;
+    pointer-events: none
+}
+.ExperienceCampaign .Select-control {
+    background-color: #fff;
+    border-color: #d9d9d9 #ccc #b3b3b3;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: default;
+    display: table;
+    height: 36px;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    width: 100%
+}
+.ExperienceCampaign .Select-control:hover {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .06)
+}
+.ExperienceCampaign .is-searchable.is-open>.Select-control {
+    cursor: text
+}
+.ExperienceCampaign .is-open>.Select-control {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background: #fff;
+    border-color: #b3b3b3 #ccc #d9d9d9
+}
+.ExperienceCampaign .is-open>.Select-control>.Select-arrow {
+    border-color: transparent transparent #999;
+    border-width: 0 5px 5px
+}
+.ExperienceCampaign .is-searchable.is-focused:not(.is-open)>.Select-control {
+    cursor: text
+}
+.ExperienceCampaign .is-focused:not(.is-open)>.Select-control {
+    border-color: #007eff;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 0 3px rgba(0, 126, 255, .1)
+}
+.ExperienceCampaign .Select--single>.Select-control .Select-value,
+.ExperienceCampaign .Select-placeholder {
+    bottom: 0;
+    color: #aaa;
+    left: 0;
+    line-height: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+.ExperienceCampaign .has-value.is-pseudo-focused.Select--single>.Select-control>.Select-value .Select-value-label,
+.ExperienceCampaign .has-value.Select--single>.Select-control>.Select-value .Select-value-label {
+    color: #333
+}
+.ExperienceCampaign .has-value.is-pseudo-focused.Select--single>.Select-control>.Select-value a.Select-value-label,
+.ExperienceCampaign .has-value.Select--single>.Select-control>.Select-value a.Select-value-label {
+    cursor: pointer;
+    text-decoration: none
+}
+.ExperienceCampaign .has-value.is-pseudo-focused.Select--single>.Select-control>.Select-value a.Select-value-label:focus,
+.ExperienceCampaign .has-value.is-pseudo-focused.Select--single>.Select-control>.Select-value a.Select-value-label:hover,
+.ExperienceCampaign .has-value.Select--single>.Select-control>.Select-value a.Select-value-label:focus,
+.ExperienceCampaign .has-value.Select--single>.Select-control>.Select-value a.Select-value-label:hover {
+    color: #007eff;
+    outline: none;
+    text-decoration: underline
+}
+.ExperienceCampaign .Select-input {
+    height: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: middle
+}
+.ExperienceCampaign .Select-input>input {
+    width: 100%;
+    background: none transparent;
+    border: 0 none;
+    box-shadow: none;
+    cursor: default;
+    display: inline-block;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0;
+    outline: none;
+    line-height: 14px;
+    padding: 8px 0 12px;
+    -webkit-appearance: none
+}
+.is-focused .ExperienceCampaign .Select-input>input {
+    cursor: text
+}
+.ExperienceCampaign .has-value.is-pseudo-focused .Select-input {
+    opacity: 0
+}
+.ExperienceCampaign .Select-control:not(.is-searchable)>.Select-input {
+    outline: none
+}
+.ExperienceCampaign .Select-loading-zone {
+    cursor: pointer;
+    display: table-cell;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 16px
+}
+.ExperienceCampaign .Select-loading {
+    -webkit-animation: Select-animation-spin .4s infinite linear;
+    animation: Select-animation-spin .4s infinite linear;
+    width: 16px;
+    height: 16px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    border-right-color: #333;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle
+}
+.ExperienceCampaign .Select-clear-zone {
+    -webkit-animation: Select-animation-fadeIn .2s;
+    animation: Select-animation-fadeIn .2s;
+    color: #999;
+    cursor: pointer;
+    display: table-cell;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 17px
+}
+.ExperienceCampaign .Select-clear-zone:hover {
+    color: #d0021b
+}
+.ExperienceCampaign .Select-clear {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1
+}
+.ExperienceCampaign .Select--multi .Select-clear-zone {
+    width: 17px
+}
+.ExperienceCampaign .Select-arrow-zone {
+    cursor: pointer;
+    display: table-cell;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 25px;
+    padding-right: 5px
+}
+.ExperienceCampaign .Select-arrow {
+    border-color: #999 transparent transparent;
+    border-style: solid;
+    border-width: 5px 5px 2.5px;
+    display: inline-block;
+    height: 0;
+    width: 0
+}
+.ExperienceCampaign .is-open .Select-arrow,
+.ExperienceCampaign .Select-arrow-zone:hover>.Select-arrow {
+    border-top-color: #666
+}
+@-webkit-keyframes Select-animation-fadeIn {
+    0% {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes Select-animation-fadeIn {
+    0% {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+.ExperienceCampaign .Select-menu-outer {
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top-color: #e6e6e6;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .06);
+    box-sizing: border-box;
+    margin-top: -1px;
+    max-height: 200px;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 1;
+    -webkit-overflow-scrolling: touch
+}
+.ExperienceCampaign .Select-menu {
+    max-height: 198px;
+    overflow-y: auto
+}
+.ExperienceCampaign .Select-option {
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #666;
+    cursor: pointer;
+    display: block;
+    padding: 8px 10px
+}
+.ExperienceCampaign .Select-option:last-child {
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px
+}
+.ExperienceCampaign .Select-option.is-selected {
+    background-color: #f5faff;
+    background-color: rgba(0, 126, 255, .04);
+    color: #333
+}
+.ExperienceCampaign .Select-option.is-focused {
+    background-color: #ebf5ff;
+    background-color: rgba(0, 126, 255, .08);
+    color: #333
+}
+.ExperienceCampaign .Select-option.is-disabled {
+    color: #ccc;
+    cursor: default
+}
+.ExperienceCampaign .Select-noresults {
+    box-sizing: border-box;
+    color: #999;
+    cursor: default;
+    display: block;
+    padding: 8px 10px
+}
+.ExperienceCampaign .Select--multi .Select-input {
+    vertical-align: middle;
+    margin-left: 10px;
+    padding: 0
+}
+.ExperienceCampaign .Select--multi.has-value .Select-input {
+    margin-left: 5px
+}
+.ExperienceCampaign .Select--multi .Select-value {
+    background-color: #ebf5ff;
+    background-color: rgba(0, 126, 255, .08);
+    border-radius: 2px;
+    border: 1px solid rgba(0, 126, 255, .24);
+    color: #007eff;
+    display: inline-block;
+    font-size: .9em;
+    line-height: 1.4;
+    margin-left: 5px;
+    margin-top: 5px;
+    vertical-align: top
+}
+.ExperienceCampaign .Select--multi .Select-value-icon,
+.ExperienceCampaign .Select--multi .Select-value-label {
+    display: inline-block;
+    vertical-align: middle
+}
+.ExperienceCampaign .Select--multi .Select-value-label {
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    cursor: default;
+    padding: 2px 5px
+}
+.ExperienceCampaign .Select--multi a.Select-value-label {
+    color: #007eff;
+    cursor: pointer;
+    text-decoration: none
+}
+.ExperienceCampaign .Select--multi a.Select-value-label:hover {
+    text-decoration: underline
+}
+.ExperienceCampaign .Select--multi .Select-value-icon {
+    cursor: pointer;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    border-right: 1px solid #c2e0ff;
+    border-right: 1px solid rgba(0, 126, 255, .24);
+    padding: 1px 5px 3px
+}
+.ExperienceCampaign .Select--multi .Select-value-icon:focus,
+.ExperienceCampaign .Select--multi .Select-value-icon:hover {
+    background-color: #d8eafd;
+    background-color: rgba(0, 113, 230, .08);
+    color: #0071e6
+}
+.ExperienceCampaign .Select--multi .Select-value-icon:active {
+    background-color: #c2e0ff;
+    background-color: rgba(0, 126, 255, .24)
+}
+.ExperienceCampaign .Select--multi.is-disabled .Select-value {
+    background-color: #fcfcfc;
+    border: 1px solid #e3e3e3;
+    color: #333
+}
+.ExperienceCampaign .Select--multi.is-disabled .Select-value-icon {
+    cursor: not-allowed;
+    border-right: 1px solid #e3e3e3
+}
+.ExperienceCampaign .Select--multi.is-disabled .Select-value-icon:active,
+.ExperienceCampaign .Select--multi.is-disabled .Select-value-icon:focus,
+.ExperienceCampaign .Select--multi.is-disabled .Select-value-icon:hover {
+    background-color: #fcfcfc
+}
+@keyframes Select-animation-spin {
+    to {
+        transform: rotate(1turn)
+    }
+}
+@-webkit-keyframes Select-animation-spin {
+    to {
+        -webkit-transform: rotate(1turn)
+    }
+}
+.ExperienceCampaign .Select {
+    font-family: Freight Sans Semibold, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+    font-size: 12px
+}
+.ExperienceCampaign .Select .Select-control {
+    border: 1px solid #85858e;
+    border-radius: 2px;
+    width: 195px
+}
+.ExperienceCampaign .Select .Select-control .Select-arrow {
+    top: 11px
+}
+.ExperienceCampaign .Select .Select-control .Select-clear {
+    display: none
+}
+.ExperienceCampaign .Select .Select-menu-outer {
+    width: 195px
+}
+.ExperienceCampaign .Select .Select-option {
+    font-size: 12px;
+    line-height: 17px
+}
+.ExperienceCampaign .Select.is-focused:not(.is-open)>.Select-control {
+    border-color: transparent
+}
+.ExperienceCampaign .DirectUploadComponent {
+    font-family: Helvetica Neue, Helvetica, Arial, Sans-Serif;
+    font-size: 12px;
+    letter-spacing: 1px
+}
+.ExperienceCampaign .DirectUploadComponent .fade-transition-enter {
+    opacity: .01
+}
+.ExperienceCampaign .DirectUploadComponent .fade-transition-enter.fade-transition-enter-active {
+    opacity: 1;
+    -moz-animation: opacity .5s ease-in-out;
+    -o-animation: opacity .5s ease-in-out;
+    -webkit-animation: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out
+}
+.ExperienceCampaign .DirectUploadComponent .fade-transition-leave {
+    opacity: 1
+}
+.ExperienceCampaign .DirectUploadComponent .fade-transition-leave.fade-transition-leave-active {
+    opacity: .01;
+    -moz-animation: opacity .3s ease-in-out;
+    -o-animation: opacity .3s ease-in-out;
+    -webkit-animation: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out
+}
+.ExperienceCampaign .DirectUploadComponent .DirectUploadAfterSubmissionSection .ImageComponent img,
+.ExperienceCampaign .DirectUploadComponent .DirectUploadFormSection .ImageComponent img {
+    width: 100%;
+    max-width: 400px
+}
+.ExperienceCampaign .DirectUploadComponent .DirectUploadAfterSubmissionSection,
+.ExperienceCampaign .DirectUploadComponent .DirectUploadFormSection,
+.ExperienceCampaign .DirectUploadComponent .photo-editor-container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    background-color: #1f1f1f;
+    color: #fff
+}
+.ExperienceCampaign .DirectUploadComponent .SignUpForm .sign-up-preview-form .ImageUploadField .field-area {
+    margin-bottom: 0;
+    width: 100%
+}
+.ExperienceCampaign .DirectUploadComponent .SignUpForm .sign-up-preview-form .ImageUploadField .field-area .ImageUploader {
+    height: 60px
+}
+.ExperienceCampaign .DirectUploadComponent .SignUpForm .sign-up-preview-form .ImageUploadField .field-area .ImageUploader .browse-text {
+    display: none
+}
+.ExperienceCampaign .DirectUploadComponent .SignUpForm .sign-up-preview-form .ImageUploadField .field-area .ImageUploader .Dropzone {
+    border: none;
+    float: none;
+    height: initial;
+    max-width: 400px;
+    width: 100%;
+    background: #0f1019
+}
+.ExperienceCampaign .DirectUploadComponent .SignUpForm .sign-up-preview-form .ImageUploadField .field-area .ImageUploader .Dropzone .stock-image-icon {
+    display: none
+}
+.ExperienceCampaign .DirectUploadComponent .SignUpForm .sign-up-preview-form .ImageUploadField .field-area .ImageUploader .Dropzone p {
+    bottom: 0;
+    font-size: 16px;
+    line-height: 60px;
+    position: relative;
+    color: #fff
+}
+.ExperienceCampaign .DirectUploadComponent .SignUpForm .sign-up-preview-form .ImageUploadField .field-area .ImageUploader .Dropzone.Dropzone-Active,
+.ExperienceCampaign .DirectUploadComponent .SignUpForm .sign-up-preview-form .ImageUploadField .field-area .ImageUploader .Dropzone:hover {
+    background: #fff;
+    border: 1px solid #0f1019
+}
+.ExperienceCampaign .DirectUploadComponent .SignUpForm .sign-up-preview-form .ImageUploadField .field-area .ImageUploader .Dropzone.Dropzone-Active p,
+.ExperienceCampaign .DirectUploadComponent .SignUpForm .sign-up-preview-form .ImageUploadField .field-area .ImageUploader .Dropzone:hover p {
+    color: #0f1019
+}
+.ExperienceCampaign .DirectUploadComponent .SignUpForm .sign-up-preview-form .ImageUploadField .field-area .ImageUploader .url-input-container {
+    display: none
+}
+.ExperienceCampaign .DirectUploadComponent .SignUpForm .sign-up-preview-form input,
+.ExperienceCampaign .DirectUploadComponent .SignUpForm .sign-up-preview-form select,
+.ExperienceCampaign .DirectUploadComponent .SignUpForm .sign-up-preview-form textarea {
+    font-size: 16px
+}
+.ExperienceCampaign .DirectUploadComponent .DirectUploadFormSection .complete-form-container {
+    height: calc(100% - 40px)
+}
+.ExperienceCampaign .DirectUploadComponent .DirectUploadFormSection .complete-form-container .sign-up-preview-form {
+    padding: 10px 0;
+    position: relative;
+    margin: auto;
+    max-width: 400px;
+    text-align: left;
+    width: 100%
+}
+.ExperienceCampaign .DirectUploadComponent .DirectUploadFormSection .complete-form-container .sign-up-preview-form .field-area {
+    margin-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative
+}
+.ExperienceCampaign .DirectUploadComponent .DirectUploadFormSection .complete-form-container .sign-up-preview-form .field-area select {
+    color: #000
+}
+.ExperienceCampaign .DirectUploadComponent .DirectUploadFormSection .complete-form-container .sign-up-preview-form .field-area select.error {
+    background: #ffefee;
+    border: 1px solid #fd3c2b
+}
+.ExperienceCampaign .DirectUploadComponent .DirectUploadFormSection .complete-form-container .sign-up-preview-form .field-area.sign-up-multi-checkbox {
+    text-align: left
+}
+.ExperienceCampaign .DirectUploadComponent .DirectUploadFormSection .complete-form-container .sign-up-preview-form .field-area.sign-up-checkbox-field label {
+    font-weight: 400;
+    display: inline
+}
+.ExperienceCampaign .DirectUploadComponent .DirectUploadFormSection .complete-form-container .sign-up-preview-form .field-area.sign-up-checkbox-field.error {
+    color: #fd3c2b
+}
+.ExperienceCampaign .DirectUploadComponent .DirectUploadFormSection .complete-form-container .sign-up-preview-form .field-area .field-name {
+    margin-bottom: 5px;
+    text-align: left
+}
+.ExperienceCampaign .DirectUploadComponent .DirectUploadFormSection .complete-form-container .sign-up-preview-form .field-area .field-name.multi-field-name {
+    display: inline-block
+}
+.ExperienceCampaign .DirectUploadComponent .DirectUploadFormSection .complete-form-container .sign-up-preview-form .field-area .field-name.multi-field-name.error {
+    color: #fd3c2b
+}
+.ExperienceCampaign .DirectUploadComponent .DirectUploadFormSection .complete-form-container .sign-up-preview-form .field-area .sign-up-input {
+    width: 100%
+}
+.ExperienceCampaign .DirectUploadComponent .DirectUploadFormSection .complete-form-container .sign-up-preview-form .field-area .sign-up-textarea {
+    width: 100%;
+    height: 100px
+}
+.ExperienceCampaign .DirectUploadComponent .DirectUploadFormSection .complete-form-container .sign-up-preview-form .field-area .sign-up-multi-dropdown {
+    width: 100%
+}
+.ExperienceCampaign .DirectUploadComponent .DirectUploadFormSection .complete-form-container .sign-up-preview-form .field-area .sign-up-date-dropdown select {
+    width: 33%
+}
+.ExperienceCampaign .DirectUploadComponent .DirectUploadFormSection .complete-form-container .sign-up-preview-form .field-area .sign-up-required {
+    display: inline-block;
+    margin-left: 3px;
+    position: absolute;
+    right: 5px;
+    top: 2px
+}
+.ExperienceCampaign .DirectUploadComponent .DirectUploadFormSection .complete-form-container .sign-up-preview-form .field-area .sign-up-checkbox {
+    margin-right: 5px;
+    display: inline
+}
+.ExperienceCampaign .DirectUploadComponent .DirectUploadFormSection .complete-form-container .sign-up-preview-form .recaptcha {
+    margin-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative
+}
+.ExperienceCampaign .DirectUploadComponent .DirectUploadFormSection .complete-form-container button {
+    width: 100%;
+    border-radius: 0;
+    font-weight: 400;
+    height: initial;
+    padding: 20px 0
+}
+.ExperienceCampaign .DirectUploadComponent .DirectUploadFormSection .complete-form-container .recaptcha {
+    width: 75%
+}
+.ExperienceCampaign .DirectUploadComponent .DirectUploadAfterSubmissionSection .after-submission-container {
+    height: calc(100% - 40px)
+}
+.ExperienceCampaign .DirectUploadComponent .DirectUploadAfterSubmissionSection .after-submission-container .ShareComponent .EmailShareButton {
+    display: none
+}
+.ExperienceCampaign .DirectUploadComponent .DirectUploadAfterSubmissionSection .after-submission-container .download-button {
+    background-color: #a6a4ab;
+    color: #404652;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px 0;
+    margin: auto;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center
+}
+.ExperienceCampaign .DirectUploadComponent .DirectUploadAfterSubmissionSection .after-submission-container .download-button:hover {
+    background-color: #d6dce3
+}
+.ExperienceCampaign .DirectUploadComponent .DirectUploadAfterSubmissionSection .after-submission-container .download-button img,
+.ExperienceCampaign .DirectUploadComponent .DirectUploadAfterSubmissionSection .after-submission-container .download-button span {
+    display: inline-block
+}
+.ExperienceCampaign .DirectUploadComponent .DirectUploadAfterSubmissionSection .after-submission-container .download-button img {
+    width: 65px;
+    margin-left: 15px
+}
+.ExperienceCampaign .desktop .DirectUploadComponent .photo-editor-container,
+.ExperienceCampaign .tablet .DirectUploadComponent .photo-editor-container {
+    position: relative;
+    height: 625px;
+    z-index: 0
+}
+.ExperienceCampaign .desktop .DirectUploadComponent .DirectUploadAfterSubmissionSection,
+.ExperienceCampaign .desktop .DirectUploadComponent .DirectUploadFormSection,
+.ExperienceCampaign .tablet .DirectUploadComponent .DirectUploadAfterSubmissionSection,
+.ExperienceCampaign .tablet .DirectUploadComponent .DirectUploadFormSection {
+    position: relative;
+    height: initial;
+    z-index: 0
+}
+.ExperienceCampaign .desktop .DirectUploadComponent .DirectUploadAfterSubmissionSection .after-submission-container,
+.ExperienceCampaign .desktop .DirectUploadComponent .DirectUploadAfterSubmissionSection .complete-form-container,
+.ExperienceCampaign .desktop .DirectUploadComponent .DirectUploadFormSection .after-submission-container,
+.ExperienceCampaign .desktop .DirectUploadComponent .DirectUploadFormSection .complete-form-container,
+.ExperienceCampaign .tablet .DirectUploadComponent .DirectUploadAfterSubmissionSection .after-submission-container,
+.ExperienceCampaign .tablet .DirectUploadComponent .DirectUploadAfterSubmissionSection .complete-form-container,
+.ExperienceCampaign .tablet .DirectUploadComponent .DirectUploadFormSection .after-submission-container,
+.ExperienceCampaign .tablet .DirectUploadComponent .DirectUploadFormSection .complete-form-container {
+    height: auto
+}
+.ExperienceCampaign .desktop .DirectUploadComponent .DirectUploadAfterSubmissionSection .scroll-area,
+.ExperienceCampaign .desktop .DirectUploadComponent .DirectUploadFormSection .scroll-area,
+.ExperienceCampaign .tablet .DirectUploadComponent .DirectUploadAfterSubmissionSection .scroll-area,
+.ExperienceCampaign .tablet .DirectUploadComponent .DirectUploadFormSection .scroll-area {
+    height: auto!important
+}
+.ExperienceCampaign .desktop .DirectUploadComponent .DirectUploadAfterSubmissionSection .scroll-area div:first-child,
+.ExperienceCampaign .desktop .DirectUploadComponent .DirectUploadFormSection .scroll-area div:first-child,
+.ExperienceCampaign .tablet .DirectUploadComponent .DirectUploadAfterSubmissionSection .scroll-area div:first-child,
+.ExperienceCampaign .tablet .DirectUploadComponent .DirectUploadFormSection .scroll-area div:first-child {
+    position: relative!important
+}
+.ExperienceCampaign .desktop .DirectUploadComponent .SignUpForm .ImageUploader .Dropzone,
+.ExperienceCampaign .tablet .DirectUploadComponent .SignUpForm .ImageUploader .Dropzone {
+    width: 33.3%
+}
+.ExperienceCampaign .DirectUploadTopNavBar {
+    background-color: #333;
+    width: 100%;
+    height: 40px;
+    display: table
+}
+.ExperienceCampaign .DirectUploadTopNavBar .button-placeholder {
+    width: 20%;
+    display: table-cell
+}
+.ExperienceCampaign .DirectUploadTopNavBar .close-button,
+.ExperienceCampaign .DirectUploadTopNavBar .done-button {
+    display: table-cell;
+    vertical-align: middle;
+    width: 20%;
+    cursor: pointer
+}
+.ExperienceCampaign .DirectUploadTopNavBar .close-button svg path,
+.ExperienceCampaign .DirectUploadTopNavBar .done-button svg path {
+    fill: #fff
+}
+.ExperienceCampaign .DirectUploadTopNavBar .close-button {
+    background-color: #ed1558
+}
+.ExperienceCampaign .DirectUploadTopNavBar .close-button svg {
+    width: 16px;
+    height: 16px
+}
+.ExperienceCampaign .DirectUploadTopNavBar .close-button:hover {
+    background-color: #ca1049
+}
+.ExperienceCampaign .DirectUploadTopNavBar .top-nav-title {
+    display: table-cell;
+    vertical-align: middle;
+    width: 60%;
+    text-align: center;
+    line-height: 40px;
+    text-transform: uppercase
+}
+.ExperienceCampaign .DirectUploadTopNavBar .done-button {
+    background-color: #4a8ed1
+}
+.ExperienceCampaign .DirectUploadTopNavBar .done-button:hover {
+    background-color: #3179c0
+}
+.ExperienceCampaign .DirectUploadTopNavBar .done-button svg {
+    width: 21px;
+    height: 21px
+}
+.ExperienceCampaign .DirectUploadTopNavBar .warning-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    z-index: 9999999999;
+    background: hsla(0, 0%, 100%, .9)
+}
+.ExperienceCampaign .DirectUploadTopNavBar .warning-screen .warning-container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 90%;
+    margin: auto
+}
+.ExperienceCampaign .DirectUploadTopNavBar .warning-screen .warning-container h3 {
+    font-size: 18px;
+    margin: 5px 0
+}
+.ExperienceCampaign .DirectUploadTopNavBar .warning-screen .warning-container p {
+    color: #848591;
+    font-weight: 700
+}
+.ExperienceCampaign .DirectUploadTopNavBar .warning-screen .warning-container button {
+    display: inline-block;
+    width: 40%;
+    line-height: 50px;
+    max-width: 170px;
+    margin-top: 20px;
+    padding: 0;
+    font-weight: 700;
+    cursor: pointer
+}
+.ExperienceCampaign .DirectUploadTopNavBar .warning-screen .warning-container .exit-button {
+    margin-right: 15px;
+    border: 1px solid #000;
+    background: transparent;
+    color: #000
+}
+.ExperienceCampaign .DirectUploadTopNavBar .warning-screen .warning-container .exit-button:hover {
+    background: #fff
+}
+.ExperienceCampaign .DirectUploadTopNavBar .warning-screen .warning-container .continue-button {
+    background: #4a8ed1
+}
+.ExperienceCampaign .DirectUploadTopNavBar .warning-screen .warning-container .continue-button:hover {
+    background: #3179c0
+}
+.ExperienceCampaign .recaptcha {
+    margin: 0 auto;
+    width: 22%;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+.ExperienceCampaign .ConfirmationModal .modal-message {
+    text-align: center;
+    padding: 35px;
+    font-size: 14px
+}
+.ExperienceCampaign .ConfirmationModal .btn-container {
+    width: 55%;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    text-align: center
+}
+.ExperienceCampaign .ConfirmationModal .btn-container .platform-btn-primary-large {
+    margin-right: 50px
+}
+.ExperienceCampaign .ErrorComponent {
+    text-align: center
+}
+.ExperienceCampaign .ErrorComponent .error-message {
+    display: block;
+    font-size: 34px;
+    padding-top: 110px
+}
+.ExperienceCampaign div.color-picker {
+    display: inline-block
+}
+.ExperienceCampaign div.color-picker .color-picker-container {
+    width: 100%;
+    position: relative
+}
+.ExperienceCampaign div.color-picker .color-picker-container .chosen-color,
+.ExperienceCampaign div.color-picker .color-picker-container .color-picker-input {
+    display: inline-block
+}
+.ExperienceCampaign div.color-picker .color-picker-container .chosen-color {
+    width: 30px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-left: 1px solid #d6dce3
+}
+.ExperienceCampaign div.color-picker input.color-picker-input {
+    margin: 0;
+    padding: 0;
+    border-radius: 0
+}
+.ExperienceCampaign div.color-picker .react-color-picker {
+    margin-top: 5px
+}
+.ExperienceCampaign div.color-picker .react-color-picker .cp,
+.ExperienceCampaign div.color-picker .react-color-picker .cp *,
+.ExperienceCampaign div.color-picker .react-color-picker .cp-hue-spectrum,
+.ExperienceCampaign div.color-picker .react-color-picker .cp-hue-spectrum *,
+.ExperienceCampaign div.color-picker .react-color-picker .cp-saturation-spectrum,
+.ExperienceCampaign div.color-picker .react-color-picker .cp-saturation-spectrum * {
+    box-sizing: border-box
+}
+.ExperienceCampaign div.color-picker .react-color-picker .cp-hue-spectrum,
+.ExperienceCampaign div.color-picker .react-color-picker .cp-saturation-spectrum {
+    position: relative;
+    display: inline-block
+}
+.ExperienceCampaign div.color-picker .react-color-picker .cp-saturation-black,
+.ExperienceCampaign div.color-picker .react-color-picker .cp-saturation-white {
+    position: relative;
+    width: 100%;
+    height: 100%
+}
+.ExperienceCampaign div.color-picker .react-color-picker .cp-saturation-white {
+    background: linear-gradient(90deg, #fff, hsla(20, 42%, 65%, 0))
+}
+.ExperienceCampaign div.color-picker .react-color-picker .cp-saturation-black {
+    background: linear-gradient(0deg, #000, hsla(20, 42%, 65%, 0))
+}
+.ExperienceCampaign div.color-picker .react-color-picker .cp-saturation-spectrum {
+    cursor: pointer
+}
+.ExperienceCampaign div.color-picker .react-color-picker .cp-saturation-spectrum .cp-saturation-drag {
+    display: none;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+.ExperienceCampaign div.color-picker .react-color-picker .cp-saturation-spectrum .cp-saturation-drag .inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    border-radius: 10px
+}
+.ExperienceCampaign div.color-picker .react-color-picker .cp-hue-spectrum {
+    background: linear-gradient(180deg, red 0, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, red);
+    cursor: pointer
+}
+.ExperienceCampaign div.color-picker .react-color-picker .cp-hue-spectrum .cp-hue-drag {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid #000
+}
+.ExperienceCampaign div.color-picker .react-color-picker .cp-hue-drag,
+.ExperienceCampaign div.color-picker .react-color-picker .cp-saturation-drag {
+    display: none!important
+}
+.ExperienceCampaign .SignUpComponent .sign-up-preview-form {
+    text-align: center;
+    padding: 10px;
+    display: block
+}
+.ExperienceCampaign .SignUpComponent .sign-up-preview-form .field-area {
+    margin-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 260px
+}
+.ExperienceCampaign .SignUpComponent .sign-up-preview-form .field-area select {
+    color: #000
+}
+.ExperienceCampaign .SignUpComponent .sign-up-preview-form .field-area select.error {
+    background: #ffefee;
+    border: 1px solid #fd3c2b
+}
+.ExperienceCampaign .SignUpComponent .sign-up-preview-form .field-area.sign-up-multi-checkbox {
+    text-align: left
+}
+.ExperienceCampaign .SignUpComponent .sign-up-preview-form .field-area.sign-up-checkbox-field .sign-up-checkbox {
+    margin-right: 5px;
+    display: inline
+}
+.ExperienceCampaign .SignUpComponent .sign-up-preview-form .field-area.sign-up-checkbox-field label {
+    font-weight: 400;
+    display: inline
+}
+.ExperienceCampaign .SignUpComponent .sign-up-preview-form .field-area.sign-up-checkbox-field.error {
+    color: #fd3c2b
+}
+.ExperienceCampaign .SignUpComponent .sign-up-preview-form .field-area .field-name {
+    margin-bottom: 5px;
+    text-align: left;
+    width: 250px
+}
+.ExperienceCampaign .SignUpComponent .sign-up-preview-form .field-area .field-name.multi-field-name {
+    display: inline-block
+}
+.ExperienceCampaign .SignUpComponent .sign-up-preview-form .field-area .field-name.multi-field-name.error {
+    color: #fd3c2b
+}
+.ExperienceCampaign .SignUpComponent .sign-up-preview-form .field-area .sign-up-input {
+    width: 250px
+}
+.ExperienceCampaign .SignUpComponent .sign-up-preview-form .field-area .sign-up-textarea {
+    width: 200px;
+    height: 100px
+}
+.ExperienceCampaign .SignUpComponent .sign-up-preview-form .field-area .sign-up-multi-dropdown {
+    width: 250px;
+    text-align: left
+}
+.ExperienceCampaign .SignUpComponent .sign-up-preview-form .field-area .sign-up-date-dropdown {
+    display: inline-block
+}
+.ExperienceCampaign .SignUpComponent .sign-up-preview-form .field-area .sign-up-required {
+    display: inline-block;
+    margin-left: 3px
+}
+.ExperienceCampaign .SignUpComponent .sign-up-preview-form .recaptcha {
+    margin-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative
+}
+.ExperienceCampaign .QuizComponent {
+    background: green
+}
+.ExperienceCampaign .FacebookShareButton {
+    display: inline-block;
+    height: 50px;
+    width: 50px
+}
+.ExperienceCampaign .FacebookShareButton .facebook-share-img {
+    cursor: pointer
+}
+.ExperienceCampaign .PinterestShareButton {
+    display: inline-block;
+    height: 50px;
+    width: 50px
+}
+.ExperienceCampaign .PinterestShareButton .pinterest-share-img {
+    cursor: pointer
+}
+.ExperienceCampaign .TwitterShareButton {
+    display: inline-block;
+    height: 50px;
+    width: 50px
+}
+.ExperienceCampaign .TwitterShareButton .twitter-share-img {
+    cursor: pointer
+}
+.ExperienceCampaign .ugc-detail {
+    font-family: Helvetica Neue, Helvetica, Arial, Sans-Serif;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    flex-grow: 1;
+    position: relative
+}
+.ExperienceCampaign .ugc-detail .inner-ugc-detail {
+    padding-top: 10px;
+    margin: 0 20px;
+    max-height: 100%
+}
+.ExperienceCampaign .ugc-detail a {
+    display: block;
+    overflow: auto
+}
+.ExperienceCampaign .ugc-detail .user-section {
+    float: left;
+    clear: right;
+    margin-left: 10px;
+    height: 50px;
+    position: relative
+}
+.ExperienceCampaign .ugc-detail .timestamp {
+    color: #8899a6;
+    font-size: 12px;
+    overflow: hidden;
+    text-align: left;
+    float: left;
+    width: 200px
+}
+.ExperienceCampaign .ugc-detail .timestamp:hover {
+    text-decoration: underline
+}
+.ExperienceCampaign .ugc-detail .timestamp {
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+.ExperienceCampaign .ugc-detail .user-section-link {
+    overflow: visible
+}
+.ExperienceCampaign .ugc-detail .social-username {
+    float: left;
+    font-weight: 700;
+    color: #b3b3b3;
+    font-size: 15px;
+    text-align: left
+}
+.ExperienceCampaign .ugc-detail .social-username:hover {
+    text-decoration: underline
+}
+.ExperienceCampaign .ugc-detail .social-handle {
+    float: left;
+    font-size: 12px;
+    line-height: 18px;
+    color: #8899a6;
+    clear: left
+}
+.ExperienceCampaign .ugc-detail .social-handle:hover {
+    text-decoration: underline
+}
+.ExperienceCampaign .ugc-detail .twitter-buttons {
+    display: inline-block
+}
+.ExperienceCampaign .ugc-detail .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px
+}
+.ExperienceCampaign .ugc-detail .avatar-link {
+    display: inline-block;
+    float: left
+}
+.ExperienceCampaign .ugc-detail .caption-container {
+    clear: both;
+    padding-top: 10px
+}
+.ExperienceCampaign .ugc-detail .caption-body {
+    color: #b3b3b3;
+    font-size: 12px;
+    text-align: left;
+    line-height: 14px
+}
+.ExperienceCampaign .ugc-detail .caption-body a {
+    display: inline-block;
+    vertical-align: bottom
+}
+.ExperienceCampaign .ugc-detail .caption-body .tweet-url {
+    color: #00e
+}
+.ExperienceCampaign .ugc-detail .footer {
+    clear: left;
+    float: left;
+    text-align: left
+}
+.ExperienceCampaign .ugc-detail .timestamp-static:hover {
+    text-decoration: none
+}
+.ExperienceCampaign .ugc-detail .social-logo {
+    float: left;
+    clear: right;
+    height: 16px;
+    width: 16px;
+    margin-left: 10px;
+    fill: #000
+}
+.ExperienceCampaign .ugc-detail .social-logo svg {
+    vertical-align: bottom
+}
+.ExperienceCampaign .ugc-detail .tumblr-icon {
+    fill: #35465c
+}
+.ExperienceCampaign .ugc-detail .twitter-icon {
+    fill: #1da1f2
+}
+.ExperienceCampaign .desktop .ugc-detail {
+    overflow-y: auto
+}
+.ExperienceCampaign .EmailShareButton {
+    display: inline-block;
+    height: 50px;
+    width: 50px
+}
+.ExperienceCampaign .EmailShareButton .email-share-link {
+    display: block;
+    background: #e8ebf0;
+    border-radius: 100px;
+    padding: 7px;
+    padding-top: 6px
+}
+.ExperienceCampaign .GalleryComponent .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle
+}
+.ExperienceCampaign .GalleryComponent .media-container {
+    width: 100%;
+    position: relative;
+    display: inline-block
+}
+.ExperienceCampaign .GalleryComponent .media-container .media {
+    max-height: 100%;
+    width: 100%
+}
+.ExperienceCampaign .GalleryComponent .media-container .social-platform {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    height: 12px;
+    width: 12px
+}
+.ExperienceCampaign .GalleryComponent .media-container .media-play-button {
+    position: absolute;
+    width: 33%;
+    height: 33%;
+    top: 33%;
+    left: 33%;
+    opacity: .8
+}
+.ExperienceCampaign .GalleryComponent .media-container .media-play-button:hover {
+    opacity: 1
+}
+.ExperienceCampaign .GalleryComponent .gallery-grid .container {
+    padding: 0
+}
+.ExperienceCampaign .GalleryComponent .gallery-grid .GalleryLoadMoreButton {
+    cursor: pointer;
+    display: inline-block;
+    line-height: 50px;
+    margin: 25px auto 0;
+    width: 100%
+}
+.ExperienceCampaign .tablet .GalleryComponent .GalleryLoadMoreButton {
+    width: 50%
+}
+.ExperienceCampaign .desktop .GalleryComponent .GalleryLoadMoreButton {
+    width: 33.3%;
+    max-width: 400px
+}
+.ExperienceCampaign .desktop .GalleryComponent .GalleryLoadMoreButton.disabled {
+    cursor: not-allowed
+}
+.ExperienceCampaign .GalleryComponent .entry-expanded-container {
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    overflow: auto
+}
+.ExperienceCampaign .GalleryComponent .entry-expanded-container .expanded-outer-container {
+    height: 100%;
+    display: flex
+}
+.ExperienceCampaign .GalleryComponent .entry-expanded-container .expanded-outer-container .outer-entry-expanded {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex
+}
+.ExperienceCampaign .GalleryComponent .entry-expanded-container .expanded-outer-container .outer-entry-expanded .entry-expanded {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
+.ExperienceCampaign .GalleryComponent .entry-expanded-container .expanded-outer-container .outer-entry-expanded .entry-expanded .content-section {
+    position: relative;
+    width: 100%
+}
+.ExperienceCampaign .GalleryComponent .entry-expanded-container .expanded-outer-container .outer-entry-expanded .entry-expanded .content-section #entry-content {
+    height: 100%;
+    background: #0f1019
+}
+.ExperienceCampaign .GalleryComponent .entry-expanded-container .expanded-outer-container .outer-entry-expanded .entry-expanded .content-section #entry-content .social-platform {
+    display: none
+}
+.ExperienceCampaign .GalleryComponent .entry-expanded-container .expanded-outer-container .outer-entry-expanded .entry-expanded .details-section {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    float: left
+}
+.ExperienceCampaign .GalleryComponent .entry-expanded-container .expanded-outer-container .close-button {
+    cursor: pointer;
+    position: absolute;
+    color: #848591;
+    height: 40px;
+    width: 40px;
+    top: 2%;
+    right: 2%;
+    opacity: .8;
+    z-index: 2
+}
+.ExperienceCampaign .GalleryComponent .entry-expanded-container .expanded-outer-container .close-button:hover {
+    opacity: 1
+}
+.ExperienceCampaign .GalleryComponent .entry-expanded-container .navigation-arrow {
+    width: 16px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, .4));
+    filter: drop-shadow(0 1px 1px rgba(0, 0, 0, .4))
+}
+.ExperienceCampaign .GalleryComponent .entry-expanded-container .navigation-touchpoint {
+    display: none;
+    z-index: 1;
+    height: 70px;
+    width: 80px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: #fff;
+    opacity: .7
+}
+.ExperienceCampaign .GalleryComponent .entry-expanded-container .navigation-touchpoint:hover {
+    opacity: 1
+}
+.ExperienceCampaign .GalleryComponent .entry-expanded-container .left-navigation {
+    left: 5%
+}
+.ExperienceCampaign .GalleryComponent .entry-expanded-container .left-navigation .navigation-arrow {
+    left: 0
+}
+.ExperienceCampaign .GalleryComponent .entry-expanded-container .right-navigation {
+    right: 5%
+}
+.ExperienceCampaign .GalleryComponent .entry-expanded-container .right-navigation .navigation-arrow {
+    right: 0
+}
+.ExperienceCampaign .GalleryComponent .clickable {
+    cursor: pointer
+}
+.ExperienceCampaign .tablet .GalleryComponent .navigation-touchpoint-tablet {
+    display: block
+}
+.ExperienceCampaign .desktop .GalleryComponent .entry-expanded-container {
+    background: rgba(31, 31, 31, .8)
+}
+.ExperienceCampaign .desktop .GalleryComponent .entry-expanded-container .expanded-outer-container .outer-entry-expanded .entry-expanded {
+    margin: auto;
+    width: 80%;
+    max-width: 1100px
+}
+.ExperienceCampaign .desktop .GalleryComponent .entry-expanded-container .expanded-outer-container .navigation-container {
+    display: block;
+    position: relative
+}
+.ExperienceCampaign .desktop .GalleryComponent .entry-expanded-container .expanded-outer-container .navigation-touchpoint-tablet {
+    display: none
+}
+.ExperienceCampaign .desktop .GalleryComponent .entry-expanded-container .expanded-outer-container .navigation-touchpoint-desktop {
+    display: block
+}
+.ExperienceCampaign .desktop .GalleryComponent .entry-expanded-container .expanded-outer-container .left-navigation {
+    left: -80px
+}
+.ExperienceCampaign .desktop .GalleryComponent .entry-expanded-container .expanded-outer-container .right-navigation {
+    right: -80px
+}
+.ExperienceCampaign .desktop .GalleryComponent .entry-expanded-container .expanded-outer-container.has-units .outer-entry-expanded .entry-expanded {
+    flex-direction: row;
+    height: 620px
+}
+.ExperienceCampaign .desktop .GalleryComponent .entry-expanded-container .expanded-outer-container.has-units .outer-entry-expanded .content-section {
+    width: 60%;
+    height: 100%
+}
+.ExperienceCampaign .desktop .GalleryComponent .entry-expanded-container .expanded-outer-container.has-units .outer-entry-expanded .details-section {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column
+}
+.ExperienceCampaign .desktop .GalleryComponent .entry-expanded-container .expanded-outer-container.has-units .outer-entry-expanded .details-section .detail-body {
+    width: 200px
+}
+.ExperienceCampaign .desktop .GalleryComponent .entry-expanded-container .expanded-outer-container.has-units .outer-entry-expanded .details-section .ugc-detail {
+    overflow-y: auto
+}
+.ExperienceCampaign .desktop .GalleryComponent .entry-expanded-container .expanded-outer-container.has-units .outer-entry-expanded .details-section .ugc-detail .inner-ugc-detail {
+    position: absolute;
+    bottom: 0
+}
+.ExperienceCampaign .desktop .GalleryComponent .entry-expanded-container .expanded-outer-container.has-units .outer-entry-expanded .details-section .ugc-detail .caption-container {
+    max-height: 100%
+}
+.ExperienceCampaign .ConversionUnitsGallery .conversion-headline {
+    color: #0f1019;
+    font-size: 14px;
+    font-family: Helvetica Neue, Helvetica, Arial, Sans-Serif;
+    line-height: 17px;
+    text-align: center;
+    padding: 12px 8px;
+    max-height: 51px;
+    overflow: hidden;
+    background: #efefef
+}
+.ExperienceCampaign .ConversionUnitsGallery .conversion-unit-link.conversion-unit {
+    cursor: pointer;
+    text-decoration: none;
+    background: #fff;
+    width: 100%;
+    display: block;
+    position: relative;
+    border-bottom: 1px solid #efefef;
+    overflow: auto;
+    line-height: 16px
+}
+.ExperienceCampaign .ConversionUnitsGallery .conversion-unit-link.conversion-unit .cta-arrow-container {
+    width: 100px;
+    height: 100px;
+    float: left;
+    position: relative;
+    fill: #848591
+}
+.ExperienceCampaign .ConversionUnitsGallery .conversion-unit-link.conversion-unit .cta-arrow-container .cta-arrow {
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: 42px;
+    left: 50px;
+    transition: all .3s ease;
+    opacity: .7
+}
+.ExperienceCampaign .ConversionUnitsGallery .conversion-unit-link.conversion-unit:hover {
+    background: #fbfbfb
+}
+.ExperienceCampaign .ConversionUnitsGallery .conversion-unit-link.conversion-unit:hover .cta-arrow {
+    left: 60px;
+    opacity: 1
+}
+.ExperienceCampaign .ConversionUnitsGallery .conversion-unit-link.conversion-unit .conversion-unit-detail {
+    width: calc(100% - 2 * 100px);
+    float: left;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 20px 12px;
+    color: #848591;
+    text-align: left;
+    font-weight: 700
+}
+.ExperienceCampaign .ConversionUnitsGallery .conversion-unit-link.conversion-unit .conversion-unit-detail .conversion-unit-cta {
+    color: #404652;
+    font-family: Helvetica Neue, Helvetica, Arial, Sans-Serif;
+    overflow: hidden;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 8px;
+    height: 32px;
+    line-height: 16px
+}
+.ExperienceCampaign .ConversionUnitsGallery .conversion-unit-link.conversion-unit .conversion-unit-detail .conversion-unit-name {
+    font-size: 14px;
+    font-family: Helvetica Neue, Helvetica, Arial, Sans-Serif;
+    overflow: hidden;
+    height: 32px;
+    line-height: 16px
+}
+.ExperienceCampaign .ConversionUnitsGallery .conversion-unit-link.conversion-unit .conversion-unit-media-container {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    float: left
+}
+.ExperienceCampaign .ConversionUnitsGallery .conversion-unit-link.conversion-unit img.conversion-unit-img {
+    max-width: 80%;
+    max-height: 80%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    position: absolute
+}
+.ExperienceCampaign .GalleryComponent .expanded-outer-container .media {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 480px;
+    height: auto;
+    width: 500px;
+    vertical-align: middle
+}
+.ExperienceCampaign .GalleryComponent .expanded-outer-container .vine-tweet-embed {
+    min-height: 400px
+}
+.ExperienceCampaign .desktop .GalleryComponent .expanded-outer-container .media {
+    width: 800px
+}
+.ExperienceCampaign .desktop .GalleryComponent .expanded-outer-container.has-units .media {
+    width: 500px
+}
+.ExperienceCampaign .CarouselComponent .carousel-item {
+    padding: 2px
+}
+.ExperienceCampaign .CarouselComponent div.slick-slider.gallery-carousel button.slick-next,
+.ExperienceCampaign .CarouselComponent div.slick-slider.gallery-carousel button.slick-prev {
+    background-color: transparent;
+    border: 0;
+    color: transparent;
+    top: 40%;
+    opacity: .7;
+    width: 30px;
+    height: 36px
+}
+.ExperienceCampaign .CarouselComponent div.slick-slider.gallery-carousel button.slick-next:before,
+.ExperienceCampaign .CarouselComponent div.slick-slider.gallery-carousel button.slick-prev:before {
+    width: 100%;
+    height: 100%
+}
+.ExperienceCampaign .CarouselComponent div.slick-slider.gallery-carousel button.slick-next:hover,
+.ExperienceCampaign .CarouselComponent div.slick-slider.gallery-carousel button.slick-prev:hover {
+    opacity: 1
+}
+.ExperienceCampaign .CarouselComponent div.slick-slider.gallery-carousel button.slick-prev {
+    left: 5px
+}
+.ExperienceCampaign .CarouselComponent div.slick-slider.gallery-carousel button.slick-prev:before {
+    content: url('//s3.amazonaws.com/com.offerpop.experiences.prod.static/images/carousel_icons/ic_leftarrow.svg')
+}
+.ExperienceCampaign .CarouselComponent div.slick-slider.gallery-carousel button.slick-next {
+    right: 5px
+}
+.ExperienceCampaign .CarouselComponent div.slick-slider.gallery-carousel button.slick-next:before {
+    content: url('//s3.amazonaws.com/com.offerpop.experiences.prod.static/images/carousel_icons/ic_rightarrow.svg')
+}
+.ExperienceCampaign .GalleryComponent .container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box
+}
+.ExperienceCampaign .GalleryComponent .grid-item {
+    position: relative;
+    width: calc(50% - 4px);
+    float: left;
+    box-sizing: border-box;
+    margin-left: 4px;
+    margin-top: 4px
+}
+.ExperienceCampaign .GalleryComponent .container:after,
+.ExperienceCampaign .GalleryComponent .row:after,
+.ExperienceCampaign .GalleryComponent .u-cf {
+    content: "";
+    display: table;
+    clear: both
+}
+.ExperienceCampaign .tablet .GalleryComponent .container {
+    padding: 0
+}
+.ExperienceCampaign .tablet .GalleryComponent .grid-item {
+    width: calc(25% - 4px)
+}
+.ExperienceCampaign .desktop .DirectUploadComponent .photo-editor-container {
+    position: relative;
+    height: 625px;
+    z-index: 0
+}
+.ExperienceCampaign .desktop .DirectUploadComponent .DirectUploadAfterSubmissionSection,
+.ExperienceCampaign .desktop .DirectUploadComponent .DirectUploadFormSection {
+    position: relative;
+    height: initial;
+    z-index: 0
+}
+.ExperienceCampaign .desktop .DirectUploadComponent .DirectUploadAfterSubmissionSection .after-submission-container,
+.ExperienceCampaign .desktop .DirectUploadComponent .DirectUploadAfterSubmissionSection .complete-form-container,
+.ExperienceCampaign .desktop .DirectUploadComponent .DirectUploadFormSection .after-submission-container,
+.ExperienceCampaign .desktop .DirectUploadComponent .DirectUploadFormSection .complete-form-container {
+    height: auto
+}
+.ExperienceCampaign .desktop .DirectUploadComponent .DirectUploadAfterSubmissionSection .scroll-area,
+.ExperienceCampaign .desktop .DirectUploadComponent .DirectUploadFormSection .scroll-area {
+    height: auto!important
+}
+.ExperienceCampaign .desktop .DirectUploadComponent .DirectUploadAfterSubmissionSection .scroll-area div:first-child,
+.ExperienceCampaign .desktop .DirectUploadComponent .DirectUploadFormSection .scroll-area div:first-child {
+    position: relative!important
+}
+.ExperienceCampaign .desktop .DirectUploadComponent .SignUpForm .ImageUploader .Dropzone {
+    width: 33.3%
+}
+.ExperienceCampaign .desktop .GalleryComponent .GalleryLoadMoreButton {
+    width: 50%
+}
+.ExperienceCampaign .desktop .GalleryComponent .navigation-touchpoint-tablet {
+    display: block
+}
+.ExperienceCampaign .desktop .GalleryComponent .container {
+    padding: 0
+}
+.ExperienceCampaign .desktop .GalleryComponent .grid-item {
+    width: calc(25% - 4px)
+}
+.ExperienceCampaign .desktop .PhotoEditor .photo-editor-container .asset-drawer.frames .scroll-area-container {
+    width: 382px
+}
+.ExperienceCampaign .desktop .PhotoEditor .photo-editor-container .asset-drawer.stickers .scroll-area-container {
+    width: 370px
+}
+.ExperienceCampaign .desktop .GalleryComponent .container {
+    max-width: 1200px
+}
+.ExperienceCampaign .desktop .GalleryComponent .grid-item {
+    width: calc(16.6666666667% - 4px)
+}
+.ExperienceCampaign .PhotoEditor {
+    overflow: hidden
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .canvas-wrapper {
+    background: #1f1f1f;
+    overflow: auto;
+    height: calc(100% - 80px);
+    transition: height .5s ease-in-out;
+    display: block;
+    width: 100%
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .canvas-wrapper.expand {
+    height: calc(100% - 80px)
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .canvas-wrapper.shrink {
+    height: calc(100% - (2*40px + (100% - (350px + 2*20px + 2*40px))))
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .canvas-wrapper .canvas-container {
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .8)
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .asset-drawer {
+    background-color: rgba(0, 0, 0, .8);
+    height: calc(100% - 470px);
+    min-height: 155px;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    transition: all .5s ease-in-out
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .asset-drawer.slide-up {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .asset-drawer .tab-title {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    border-top: 1px solid #333;
+    box-sizing: border-box
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .asset-drawer.frames .scroll-area-container {
+    width: 289px
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .asset-drawer.stickers .scroll-area-container {
+    width: 310px
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .asset-drawer .slider-container {
+    margin: auto;
+    max-width: 500px
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .asset-drawer .slider-container .zoom-slider {
+    display: inline-block;
+    height: 40px;
+    margin: 0 10px;
+    width: 70%
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .asset-drawer .adjust-icon-container {
+    margin: auto;
+    max-width: 500px
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .asset-drawer .adjust-icon-container .mirror-icon,
+.ExperienceCampaign .PhotoEditor .photo-editor-container .asset-drawer .adjust-icon-container .rotate-icon {
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    margin: 20px 50px;
+    opacity: .6;
+    width: 30px
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .asset-drawer .adjust-icon-container .mirror-icon svg #Shape,
+.ExperienceCampaign .PhotoEditor .photo-editor-container .asset-drawer .adjust-icon-container .rotate-icon svg #Shape {
+    fill: #fff
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .asset-drawer .adjust-icon-container .mirror-icon:hover,
+.ExperienceCampaign .PhotoEditor .photo-editor-container .asset-drawer .adjust-icon-container .rotate-icon:hover {
+    opacity: 1
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .asset-drawer .scroll-area-container {
+    height: calc(100% - 30px);
+    margin: auto
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .asset-drawer .scroll-area-container .frames-asset,
+.ExperienceCampaign .PhotoEditor .photo-editor-container .asset-drawer .scroll-area-container .stickers-asset {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    float: left;
+    margin: 5px;
+    cursor: pointer
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .asset-drawer .scroll-area-container .frames-asset:hover,
+.ExperienceCampaign .PhotoEditor .photo-editor-container .asset-drawer .scroll-area-container .stickers-asset:hover {
+    background-color: #fff
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .asset-drawer .scroll-area-container .frames-asset {
+    width: 83px;
+    height: 83px;
+    background-color: #181818
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .asset-drawer .scroll-area-container .frames-asset svg {
+    height: 41.5px;
+    width: 41.5px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%)
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .asset-drawer .scroll-area-container .frames-asset svg text {
+    font-size: 12px;
+    text-transform: uppercase
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .asset-drawer .scroll-area-container .frames-asset svg path,
+.ExperienceCampaign .PhotoEditor .photo-editor-container .asset-drawer .scroll-area-container .frames-asset svg text {
+    fill: #fff
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .asset-drawer .scroll-area-container .frames-asset:hover path,
+.ExperienceCampaign .PhotoEditor .photo-editor-container .asset-drawer .scroll-area-container .frames-asset:hover text {
+    fill: #181818
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .asset-drawer .scroll-area-container .stickers-asset {
+    width: 50px;
+    height: 50px;
+    background-color: transparent
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .editor-tab-wrapper {
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    background-color: #333;
+    width: 100%;
+    z-index: 10000
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .editor-tab-wrapper .editor-tab-container {
+    width: 100%;
+    display: table;
+    height: 100%;
+    margin: auto
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .editor-tab-wrapper .editor-tab-container .editor-tab {
+    display: table-cell;
+    vertical-align: middle;
+    cursor: pointer;
+    text-align: center;
+    width: 33.3%
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .editor-tab-wrapper .editor-tab-container .editor-tab.active,
+.ExperienceCampaign .PhotoEditor .photo-editor-container .editor-tab-wrapper .editor-tab-container .editor-tab:hover {
+    background-color: rgba(0, 0, 0, .4)
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .editor-tab-wrapper .editor-tab-container .editor-tab.active svg path,
+.ExperienceCampaign .PhotoEditor .photo-editor-container .editor-tab-wrapper .editor-tab-container .editor-tab:hover svg path {
+    fill: #00bcd4
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .editor-tab-wrapper .editor-tab-container .editor-tab svg {
+    width: 21px;
+    height: 21px
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .editor-tab-wrapper .editor-tab-container .editor-tab svg path {
+    fill: hsla(0, 0%, 100%, .7)
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .editor-tab-wrapper .editor-tab-container .editor-tab span,
+.ExperienceCampaign .PhotoEditor .photo-editor-container .editor-tab-wrapper .editor-tab-container .editor-tab svg {
+    vertical-align: middle
+}
+.ExperienceCampaign .PhotoEditor .photo-editor-container .editor-tab-wrapper .editor-tab-container .editor-tab span {
+    display: none;
+    margin-left: 6px
+}
+.ExperienceCampaign .mobile .PhotoEditor .photo-editor-container .asset-drawer.frames .scroll-area-container,
+.ExperienceCampaign .tablet .PhotoEditor .photo-editor-container .asset-drawer.frames .scroll-area-container {
+    width: 382px
+}
+.ExperienceCampaign .mobile .PhotoEditor .photo-editor-container .asset-drawer.stickers .scroll-area-container,
+.ExperienceCampaign .tablet .PhotoEditor .photo-editor-container .asset-drawer.stickers .scroll-area-container {
+    width: 370px
+}
+.ExperienceCampaign .desktop .PhotoEditor .photo-editor-container .asset-drawer.frames .scroll-area-container {
+    width: 568px
+}
+.ExperienceCampaign .desktop .PhotoEditor .photo-editor-container .asset-drawer.stickers .scroll-area-container {
+    width: 610px
+}
+.ExperienceCampaign .desktop .PhotoEditor .photo-editor-container .max-width {
+    max-width: 860px
+}
+.ExperienceCampaign .desktop .PhotoEditor .photo-editor-container .editor-tab-wrapper .editor-tab-container .editor-tab span {
+    display: inline-block
+}
+.ExperienceCampaign .default-placeholder {
+    background-color: hsla(0, 0%, 100%, .15);
+    border: 2px dashed rgba(214, 220, 227, .6);
+    padding-top: 50px;
+    height: 200px;
+    width: 100%
+}
+.ExperienceCampaign .default-placeholder .svg-container {
+    width: 85px;
+    height: 85px;
+    margin: auto
+}
+.ExperienceCampaign .default-placeholder .svg-container svg {
+    width: 100%;
+    height: 100%
+}
+.ExperienceCampaign .default-placeholder .svg-container svg path,
+.ExperienceCampaign .default-placeholder .svg-container svg polygon,
+.ExperienceCampaign .default-placeholder .svg-container svg text {
+    fill: #d6dce3
+}
+.ExperienceCampaign .PoweredBy a {
+    font-family: Helvetica Neue, Helvetica, Arial, Sans-Serif;
+    font-size: 10px
+}
+.ExperienceCampaign .ImageUploader {
+    width: 100%
+}
+.ExperienceCampaign .EditModalContainer .ImageUploader .browse-text,
+.ExperienceCampaign .ExperienceMain .ImageUploader .browse-text,
+.ExperienceCampaign .SignUpForm .ImageUploader .browse-text {
+    font-weight: 400;
+    margin: 0 0 10px
+}
+.ExperienceCampaign .EditModalContainer .ImageUploader p.text-error,
+.ExperienceCampaign .ExperienceMain .ImageUploader p.text-error,
+.ExperienceCampaign .SignUpForm .ImageUploader p.text-error {
+    font-size: 12px;
+    color: #fd3c2b
+}
+.ExperienceCampaign .EditModalContainer .ImageUploader .Dropzone,
+.ExperienceCampaign .EditModalContainer .ImageUploader .image-preview,
+.ExperienceCampaign .EditModalContainer .ImageUploader .loading-gif,
+.ExperienceCampaign .ExperienceMain .ImageUploader .Dropzone,
+.ExperienceCampaign .ExperienceMain .ImageUploader .image-preview,
+.ExperienceCampaign .ExperienceMain .ImageUploader .loading-gif,
+.ExperienceCampaign .SignUpForm .ImageUploader .Dropzone,
+.ExperienceCampaign .SignUpForm .ImageUploader .image-preview,
+.ExperienceCampaign .SignUpForm .ImageUploader .loading-gif {
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-right: 12px
+}
+.ExperienceCampaign .EditModalContainer .ImageUploader .Dropzone,
+.ExperienceCampaign .ExperienceMain .ImageUploader .Dropzone,
+.ExperienceCampaign .SignUpForm .ImageUploader .Dropzone {
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    border: 2px dashed #abb9c3;
+    display: inline-block;
+    position: relative
+}
+.ExperienceCampaign .EditModalContainer .ImageUploader .Dropzone .stock-image-icon,
+.ExperienceCampaign .ExperienceMain .ImageUploader .Dropzone .stock-image-icon,
+.ExperienceCampaign .SignUpForm .ImageUploader .Dropzone .stock-image-icon {
+    width: 50%;
+    height: 50%;
+    margin: 10% 5% 0 15%
+}
+.ExperienceCampaign .EditModalContainer .ImageUploader .Dropzone .stock-image-icon path,
+.ExperienceCampaign .ExperienceMain .ImageUploader .Dropzone .stock-image-icon path,
+.ExperienceCampaign .SignUpForm .ImageUploader .Dropzone .stock-image-icon path {
+    fill: #abb9c3
+}
+.ExperienceCampaign .EditModalContainer .ImageUploader .Dropzone p,
+.ExperienceCampaign .ExperienceMain .ImageUploader .Dropzone p,
+.ExperienceCampaign .SignUpForm .ImageUploader .Dropzone p {
+    color: #abb9c3;
+    font-size: 12px;
+    position: absolute;
+    bottom: 10%;
+    text-align: center;
+    width: 100%
+}
+.ExperienceCampaign .EditModalContainer .ImageUploader .Dropzone.Dropzone-Active,
+.ExperienceCampaign .EditModalContainer .ImageUploader .Dropzone:hover,
+.ExperienceCampaign .ExperienceMain .ImageUploader .Dropzone.Dropzone-Active,
+.ExperienceCampaign .ExperienceMain .ImageUploader .Dropzone:hover,
+.ExperienceCampaign .SignUpForm .ImageUploader .Dropzone.Dropzone-Active,
+.ExperienceCampaign .SignUpForm .ImageUploader .Dropzone:hover {
+    background: #fff;
+    border: 2px solid transparent
+}
+.ExperienceCampaign .EditModalContainer .ImageUploader .Dropzone.Dropzone-Active .stock-image-icon path,
+.ExperienceCampaign .EditModalContainer .ImageUploader .Dropzone:hover .stock-image-icon path,
+.ExperienceCampaign .ExperienceMain .ImageUploader .Dropzone.Dropzone-Active .stock-image-icon path,
+.ExperienceCampaign .ExperienceMain .ImageUploader .Dropzone:hover .stock-image-icon path,
+.ExperienceCampaign .SignUpForm .ImageUploader .Dropzone.Dropzone-Active .stock-image-icon path,
+.ExperienceCampaign .SignUpForm .ImageUploader .Dropzone:hover .stock-image-icon path {
+    fill: #1dc2d1
+}
+.ExperienceCampaign .EditModalContainer .ImageUploader .Dropzone.Dropzone-Active p,
+.ExperienceCampaign .EditModalContainer .ImageUploader .Dropzone:hover p,
+.ExperienceCampaign .ExperienceMain .ImageUploader .Dropzone.Dropzone-Active p,
+.ExperienceCampaign .ExperienceMain .ImageUploader .Dropzone:hover p,
+.ExperienceCampaign .SignUpForm .ImageUploader .Dropzone.Dropzone-Active p,
+.ExperienceCampaign .SignUpForm .ImageUploader .Dropzone:hover p {
+    color: #1dc2d1
+}
+.ExperienceCampaign .EditModalContainer .ImageUploader .loading-gif,
+.ExperienceCampaign .ExperienceMain .ImageUploader .loading-gif,
+.ExperienceCampaign .SignUpForm .ImageUploader .loading-gif {
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50% 50%
+}
+.ExperienceCampaign .EditModalContainer .ImageUploader .image-preview,
+.ExperienceCampaign .ExperienceMain .ImageUploader .image-preview,
+.ExperienceCampaign .SignUpForm .ImageUploader .image-preview {
+    position: relative;
+    float: left;
+    background-size: cover
+}
+.ExperienceCampaign .EditModalContainer .ImageUploader .image-preview:hover,
+.ExperienceCampaign .ExperienceMain .ImageUploader .image-preview:hover,
+.ExperienceCampaign .SignUpForm .ImageUploader .image-preview:hover {
+    box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, .2);
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out
+}
+.ExperienceCampaign .EditModalContainer .ImageUploader .image-preview:hover .delete-tray,
+.ExperienceCampaign .ExperienceMain .ImageUploader .image-preview:hover .delete-tray,
+.ExperienceCampaign .SignUpForm .ImageUploader .image-preview:hover .delete-tray {
+    display: block
+}
+.ExperienceCampaign .EditModalContainer .ImageUploader .image-preview .delete-tray,
+.ExperienceCampaign .ExperienceMain .ImageUploader .image-preview .delete-tray,
+.ExperienceCampaign .SignUpForm .ImageUploader .image-preview .delete-tray {
+    background: #fff;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 21px;
+    text-align: center;
+    display: none
+}
+.ExperienceCampaign .EditModalContainer .ImageUploader .image-preview .delete-icon,
+.ExperienceCampaign .ExperienceMain .ImageUploader .image-preview .delete-icon,
+.ExperienceCampaign .SignUpForm .ImageUploader .image-preview .delete-icon {
+    width: 21px;
+    height: 21px;
+    cursor: pointer
+}
+.ExperienceCampaign .EditModalContainer .ImageUploader .image-preview .delete-icon path,
+.ExperienceCampaign .ExperienceMain .ImageUploader .image-preview .delete-icon path,
+.ExperienceCampaign .SignUpForm .ImageUploader .image-preview .delete-icon path {
+    fill: #223d5e
+}
+.ExperienceCampaign .EditModalContainer .ImageUploader .url-input-container,
+.ExperienceCampaign .ExperienceMain .ImageUploader .url-input-container,
+.ExperienceCampaign .SignUpForm .ImageUploader .url-input-container {
+    margin-top: 20px
+}
+.ExperienceCampaign .EditModalContainer .ImageUploader .url-input-container label,
+.ExperienceCampaign .ExperienceMain .ImageUploader .url-input-container label,
+.ExperienceCampaign .SignUpForm .ImageUploader .url-input-container label {
+    margin: 5px 0
+}
+.ExperienceCampaign .EditModalContainer .ImageUploader .add-image-url-icon,
+.ExperienceCampaign .EditModalContainer .ImageUploader .image-url-input,
+.ExperienceCampaign .ExperienceMain .ImageUploader .add-image-url-icon,
+.ExperienceCampaign .ExperienceMain .ImageUploader .image-url-input,
+.ExperienceCampaign .SignUpForm .ImageUploader .add-image-url-icon,
+.ExperienceCampaign .SignUpForm .ImageUploader .image-url-input {
+    display: inline-block;
+    vertical-align: middle
+}
+.ExperienceCampaign .EditModalContainer .ImageUploader .image-url-input,
+.ExperienceCampaign .ExperienceMain .ImageUploader .image-url-input,
+.ExperienceCampaign .SignUpForm .ImageUploader .image-url-input {
+    margin-right: 5px
+}
+.ExperienceCampaign .EditModalContainer .ImageUploader .add-image-url-icon,
+.ExperienceCampaign .ExperienceMain .ImageUploader .add-image-url-icon,
+.ExperienceCampaign .SignUpForm .ImageUploader .add-image-url-icon {
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+    opacity: .6
+}
+.ExperienceCampaign .EditModalContainer .ImageUploader .add-image-url-icon path,
+.ExperienceCampaign .ExperienceMain .ImageUploader .add-image-url-icon path,
+.ExperienceCampaign .SignUpForm .ImageUploader .add-image-url-icon path {
+    fill: #1dc2d1
+}
+.ExperienceCampaign .EditModalContainer .ImageUploader .add-image-url-icon:hover,
+.ExperienceCampaign .ExperienceMain .ImageUploader .add-image-url-icon:hover,
+.ExperienceCampaign .SignUpForm .ImageUploader .add-image-url-icon:hover {
+    opacity: 1
+}
+.ExperienceCampaign .experience-stopped-container .page-icon-container {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    overflow: hidden
+}
+.ExperienceCampaign .experience-stopped-container .page-icon-container .page-icon {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    bottom: 0;
+    left: 15px
+}
+.ExperienceCampaign .experience-stopped-container .page-icon-container .page-icon g {
+    fill: #bdbdbd
+}
+.ExperienceCampaign .experience-stopped-container .page-icon-container .dot,
+.ExperienceCampaign .experience-stopped-container .page-icon-container .star-icon {
+    position: absolute;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+.ExperienceCampaign .experience-stopped-container .page-icon-container .star-icon {
+    width: 10px;
+    height: 10px;
+    -webkit-animation: fadeInUp 2s 0s linear infinite;
+    animation: fadeInUp 2s 0s linear infinite
+}
+.ExperienceCampaign .experience-stopped-container .page-icon-container .star-icon.turquoise {
+    bottom: 35%;
+    left: 20%;
+    -webkit-animation-delay: .33333s;
+    animation-delay: .33333s
+}
+.ExperienceCampaign .experience-stopped-container .page-icon-container .star-icon.turquoise g {
+    fill: #01b5aa
+}
+.ExperienceCampaign .experience-stopped-container .page-icon-container .star-icon.green {
+    bottom: 15%;
+    right: 0;
+    -webkit-animation-delay: .66666s;
+    animation-delay: .66666s
+}
+.ExperienceCampaign .experience-stopped-container .page-icon-container .star-icon.green g {
+    fill: #7ed321
+}
+.ExperienceCampaign .experience-stopped-container .page-icon-container .star-icon.purple {
+    bottom: 75%;
+    left: 40%;
+    -webkit-animation-delay: .99999s;
+    animation-delay: .99999s
+}
+.ExperienceCampaign .experience-stopped-container .page-icon-container .star-icon.purple g {
+    fill: #bd10e0
+}
+.ExperienceCampaign .experience-stopped-container .page-icon-container .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    -webkit-animation: fadeInUp 2.5s 0s linear infinite;
+    animation: fadeInUp 2.5s 0s linear infinite
+}
+.ExperienceCampaign .experience-stopped-container .page-icon-container .dot.blue {
+    background: #4a8ed1;
+    left: 5%;
+    bottom: 15%;
+    -webkit-animation-delay: .33333s;
+    animation-delay: .33333s
+}
+.ExperienceCampaign .experience-stopped-container .page-icon-container .dot.pink {
+    background: #ef2c8c;
+    left: 60%;
+    bottom: 60%;
+    -webkit-animation-delay: .66666s;
+    animation-delay: .66666s
+}
+.ExperienceCampaign .experience-stopped-container .page-icon-container .dot.green {
+    background: #7ed321;
+    left: 30%;
+    top: 5%;
+    -webkit-animation-delay: .99999s;
+    animation-delay: .99999s
+}
+.ExperienceCampaign .experience-stopped-container .page-icon-container .dot.orange {
+    background: #f6bc23;
+    right: 25%;
+    top: 0;
+    -webkit-animation-delay: 1.33333s;
+    animation-delay: 1.33333s
+}
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+.ExperienceCampaign .loading-animated-icon .jumper {
+    width: 50px;
+    height: 50px;
+    margin: auto
+}
+.ExperienceCampaign .loading-animated-icon .jumper>div {
+    background-color: #4a8ed1;
+    border-radius: 100%;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    position: absolute;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: jumper 1s 0s linear infinite;
+    animation: jumper 1s 0s linear infinite
+}
+.ExperienceCampaign .loading-animated-icon .jumper>div:nth-child(2) {
+    -webkit-animation-delay: .33333s;
+    animation-delay: .33333s
+}
+.ExperienceCampaign .loading-animated-icon .jumper>div:nth-child(3) {
+    -webkit-animation-delay: .66666s;
+    animation-delay: .66666s
+}
+@-webkit-keyframes jumper {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0)
+    }
+    5% {
+        opacity: 1
+    }
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0
+    }
+}
+@keyframes jumper {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0)
+    }
+    5% {
+        opacity: 1
+    }
+    to {
+        opacity: 0
+    }
+}
+.ExperienceCampaign .components-container {
+    height: 100%;
+    overflow-y: auto;
+    position: relative
+}
+.ExperienceCampaign .loading-animation-container {
+    margin-top: 20px;
+    text-align: center
+}
+.ExperienceCampaign .loading-animation-container p {
+    color: #bdbdbd;
+    font-weight: 700;
+    margin-top: 20px;
+    font-size: 15px
+}
+
+
+/* ======== WYNG STYLES END ====== */
+
+
+/* page-wide input styles */
+.ExperienceCampaign .SignUpComponent .sign-up-preview-form .sign-up-multi-dropdown {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  display: block;
+  font: inherit;
+  outline: 0;
+  width: 100%;
+}
+
+.ExperienceCampaign .SignUpComponent .sign-up-preview-form .field-area .sign-up-multi-dropdown { width: 100%; }
+
+#op-experience {
+  color: #555;
+}
+
+/* custom stylings */ 
+#op-experience {
+  max-width: 933px;
+  margin: 0 auto;
+}
+
+.product-container { 
+  display: flex; 
+  padding: 0 20px; 
+  text-align: center;
+  margin: 0 auto !important;
+  width: 96%;  
+}
+
+.product-container > div {
+  flex: 1; 
+  padding: 0 4px 24px; 
+}
+
+.product-container .product-wrapper {
+  border: 1px solid #dbdbdb;
+  border-radius: 3px; 
+  text-align: center;
+  transition: border .2s; 
+  max-height: 100em;
+  opacity: 1; 
+  transition: max-height .6, opacity .6;
+}
+
+.product-container .product-wrapper:hover {
+  border-color: #91beec;
+}
+
+.ExperienceCampaign .SignUpComponent .sign-up-preview-form .product-wrapper:hover .sign-up-multi-dropdown { 
+  border-color: #7eb4e9;
+  color: #4894e0;
+  -webkit-transition-delay: .1s;
+  transition-delay: .1s;
+}
+
+.product-container .product-image {
+  background: #fff; 
+  padding-top: 30px; 
+  z-index: 1; 
+}
+
+.product-container .product-title {
+  color: #555;
+  margin: 1em .75em;
+  margin: 1.333333333333333rem 1rem;
+  min-height: 4em;
+  min-height: 5.333333333333332rem;
+  font-size: 1.333333333333333em;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 1em;
+}
+
+.product-container .MultipleChoiceField {
+   -webkit-transition-timing-function: cubic-bezier(.55,0,.1,1);
+  transition-timing-function: cubic-bezier(.55,0,.1,1);
+  background: #f6f6f1;
+  max-height: 130px;
+  overflow: hidden;
+  padding: 22px 12px 24px;
+  z-index: 0;
+}
+
+.ExperienceCampaign .SignUpComponent .sign-up-preview-form .product-wrapper .field-area {
+  margin: 0 auto;
+  width: inherit;
+}
+
+.ExperienceCampaign .SignUpComponent .sign-up-preview-form .product-wrapper .field-name {
+  font-size: 0; 
+}
+
+
+.ExperienceCampaign .SignUpComponent .sign-up-preview-form .sign-up-multi-dropdown {
+  background: #f6f6f1 url(https://s3-us-west-2.amazonaws.com/staging-site-assets/boost-experts/select-arrow.png) no-repeat 95% center;
+  background-size: 16px 12px;
+  border: 1px solid #dbdbdb;
+  padding: 0.75em 12px;
+  border-radius: 3px;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  display: block;
+  font: inherit;
+  outline: 0;
+}
+
+.ExperienceCampaign .SignUpComponent .sign-up-preview-form .product-wrapper .sign-up-multi-dropdown {
+    background: #fff url(https://s3-us-west-2.amazonaws.com/staging-site-assets/boost-experts/select-arrow.png) no-repeat right 12px center;
+    background-size: 16px 12px;
+    border: 1px solid #ebe9e3;
+    border-radius: 3px;
+    color: #7eb4e9;
+    cursor: pointer;
+    font-size: .888888888888889em;
+    font-weight: 600;
+    line-height: 1.5;
+    -webkit-transition: border .2s,color .2s;
+    transition: border .2s,color .2s;
+    padding: .5em 12px;
+    width: 100%;
+}
+
+.ExperienceCampaign .SignUpComponent .sign-up-preview-form > .field-area:nth-child(n+1) {
+  width: 50%;
+  display: inline-block; 
+  vertical-align: top; 
+  padding: 0 24px 22px; 
+  float: left;
+}
+
+.ExperienceCampaign .SignUpComponent .sign-up-preview-form > .field-area:nth-child(n+1) .field-name {
+  color: #555;
+  font-weight: 300;
+  letter-spacing: .02em;
+  margin-bottom: 7px;
+}
+
+.ExperienceCampaign .SignUpComponent .sign-up-preview-form > .field-area:nth-child(n+1) .sign-up-input {
+  width: 100%;
+  padding: 1.3em 12px;
+  background: #f6f6f1;
+  border: 1px solid #dbdbdb;
+}
+
+.ExperienceCampaign .SignUpComponent .sign-up-preview-form .CheckboxField.sign-up-checkbox-field.field-area.opt_in_2004483953023 {
+  position: relative;
+  float: left;
+  display: block;
+  width: 100%;
+  text-align: initial;
+  clear: both;
+  font-size: 0.9em;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  vertical-align: top;
+  color: #555;
+  padding-left: 60px;
+}
+
+.ExperienceCampaign .SignUpComponent .sign-up-preview-form .CheckboxField.sign-up-checkbox-field.field-area.opt_in_2004483953023 input.sign-up-checkbox {
+  height: 24px;
+  left: 24px;
+  margin: 0 10px 0 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 24px;
+  background: #f6f6f1;
+  border: 1px solid #dbdbdb;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  display: block;
+  outline: 0;
+}
+
+.ExperienceCampaign .SignUpComponent .sign-up-preview-form .CheckboxField.sign-up-checkbox-field.field-area.opt_in_2004483953023 input.sign-up-checkbox:checked {
+  background: #ffb646 url(../images/check.png) no-repeat center;
+  background-size: 23px 23px;
+  border-color: #f69933;
+}
+
+.ExperienceCampaign .SignUpComponent .sign-up-preview-form .field-area .sign-up-required { display: none; }
+
+.Experience-5824d9576caf495675aeed87 .components-container .component button.yellow-btn {
+  outline: none;
+  width: 20%;
+  display: block;
+  clear: both;
+  background: #f8ad3b;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.444444444444444em;
+  letter-spacing: .02em;
+  line-height: 2.576923076923077;
+  margin: 0 auto;
+  text-transform: uppercase;
+  -webkit-transition: background .2s ease-out;
+  transition: background .2s ease-out;
+  -webkit-transition-timing-function: cubic-bezier(.55,0,.1,1);
+  transition-timing-function: cubic-bezier(.55,0,.1,1);
+  padding: 0;
+  height: initial;
+  border-radius: 0;
+}
+
+.Experience-5824d9576caf495675aeed87 .components-container .component button.yellow-btn:hover {
+    background: #ffb646;
+}

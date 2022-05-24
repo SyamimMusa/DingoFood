@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ApplicationLayer",
+    "\\ApplicationLayer\\ManageAdminInterface",
+    "\\ApplicationLayer\\ManageReportInterface",
+    "\\BusinessServiceLayer",
+    "\\BusinessServiceLayer\\controller",
+    "\\BusinessServiceLayer\\model"
+  ],
+  "SelectedNode": "\\ApplicationLayer\\ManageReportInterface\\weeklyReport.php",
+  "PreviewInSolutionExplorer": false
+}

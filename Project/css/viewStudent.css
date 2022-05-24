@@ -1,0 +1,90 @@
+
+
+.modal-container {
+  background: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  color: white;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  transition: opacity  0.5s, visibility 0s linear 0.5s;
+  z-index: 2;
+}
+.modal-toggler:checked + .modal-container {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 2em;
+  border-radius: 0.5em;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+.modal.close-modal-area {
+  width: 100%;
+  height: 100%;
+}
+.modal.modal-box {
+  background: lightgray;
+  text-align: center;
+  color: black;
+  width: 80%;
+  height: 80%;
+}
+.content .modal {
+  width: 100%;
+  max-width: 40em;
+}
+
+.toggle-modal-button {
+  background-color: transparent;
+  color: black;
+  padding: 1em;
+  cursor: pointer;
+  border-radius: 0.5em;
+  box-shadow: inset 0 0 1px black;
+  transition: background-color 0.2s, color            0.2s, -webkit-transform        0.1s linear;
+  transition: background-color 0.2s, color            0.2s, transform        0.1s linear;
+  transition: background-color 0.2s, color            0.2s, transform        0.1s linear, -webkit-transform        0.1s linear;
+}
+.toggle-modal-button:hover, .toggle-modal-button:focus, .toggle-modal-button:active {
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: none;
+  transition: background-color 0.2s, color            0.2s, box-shadow       0.2s, -webkit-transform        0.1s linear;
+  transition: background-color 0.2s, color            0.2s, box-shadow       0.2s, transform        0.1s linear;
+  transition: background-color 0.2s, color            0.2s, box-shadow       0.2s, transform        0.1s linear, -webkit-transform        0.1s linear;
+}
+.toggle-modal-button:active {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.content .toggle-modal-button {
+  color: rgba(0, 0, 0, 0.75);
+  margin-bottom: 1em;
+}
+
+.content {
+  color: peru;
+  width: 90%;
+  max-width: 600px;
+  padding-top: 2em;
+  margin: 0 auto;
+}
+
+[aria-hidden="true"] {
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  position: absolute !important;
+  overflow: hidden !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+}

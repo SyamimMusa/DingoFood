@@ -1,0 +1,72 @@
+
+
+.carousel-item {
+  height: 65vh;
+  min-height: 500px;
+  background: no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color : black;
+}
+h3{
+	font-weight: 700;
+	font-size: 2.0em;
+}
+
+
+.why{
+	text-align: center;
+}
+
+.navbar-brand{
+	display: absolute;
+}
+
+/*Language*/
+/*Language Button*/
+
+.roundborders {
+	border-radius: 5px;
+}
+
+.large:hover {
+	/* 
+	don't forget the 1px border!
+	The first language is 40px heigh, 
+	the others are 41px
+	*/
+	height: 245px;
+}
+
+/*3 Column*/
+
+.column3 {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+	text-align: left;
+}
+
+.column2 {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+	text-align: center;
+}
+
+.column1 {
+    float: right;
+    width: 33.33%;
+    padding: 10px;
+	text-align: right;
+}
+
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
