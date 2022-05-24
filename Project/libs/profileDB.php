@@ -6,6 +6,7 @@
    * Create prepared statements
    * Bind values
    * Return rows and results
+   * Test Github
    */
 
 require_once 'config.php';
