@@ -332,7 +332,33 @@ $sno = $row + 1;
                 <a href="listMenu.php?menu_category=Cake">Cake</a> .
                 <a href="listMenu.php?menu_category=Beverage">Beverage</a> .
                 <a href="listMenu.php?menu_category=Mini Bites">Mini Bites</a> ]</h2>
-<br>
+<?php
+	  if(isset($_POST['search_btn'])){
+		  $valueToSearch = $_POST['valueToSearch'];
+		  $query = "SELECT * FROM `menu` WHERE `menu_name` LIKE '%".$valueToSearch."%'";
+		  $search_menu = SearchMenu($query);
+	  }
+	  else{
+		  $query = "SELECT * FROM `menu`";
+		  $search_menu = SearchMenu($query);
+	  }
+
+	  function SearchMenu($query){
+		  $connect = mysqli_connect("localhost:3308","root","","dingofood");
+		  $search_Result = mysqli_query($connect, $query);
+		  return $search_Result;
+	  }
+?>
+
+<form action="listMenu.php" method="POST">
+<div>
+<div class="search">
+	  <input type="text" name="valueToSearch"  placeholder="Search for Menu Name ...">
+	  <button class="searchButton" type="submit" name="search_btn" value="Search"><i class="fa fa-search"></i></button> 
+</div>
+</div>
+</form>
+                <br>
 
 <!-- DISPLAY MENU -->
 
