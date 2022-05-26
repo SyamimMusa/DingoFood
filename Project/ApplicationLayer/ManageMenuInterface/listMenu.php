@@ -411,7 +411,7 @@ $sno = $row + 1;
       </tr>
       <?php 
 
-        foreach($data as $row){
+      while($row = mysqli_fetch_array($search_menu)):
       ?>
       <tr text-align="center">
         <td class="solid"><?php echo $sno; ?></td>
@@ -436,8 +436,10 @@ $sno = $row + 1;
       </tr>
       <?php
       $sno++;
-      } 
       ?>
+      <?php 
+	      endwhile;
+	    ?>
     </table>
   </div>
 
