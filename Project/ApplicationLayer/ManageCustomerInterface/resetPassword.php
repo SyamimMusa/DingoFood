@@ -11,17 +11,6 @@ if($conn){
      echo"Connection not successful" . mysqli_error($conn);
      die($conn);
 }
-
-require_once '../../BusinessServiceLayer/controller/customerController.php';
-$customer = new customerController();
-
-if(isset($_POST['login']))
-{
-  $customer = $customer->loginCust();
-    
-
-
-}
 ?>
 
 <!DOCTYPE html>
@@ -138,55 +127,28 @@ body {
 }
 </style>
 
-<!-- SIGNUP BACKGROUND -->
+<!-- RESET PASSWORD INTERFACE -->
 
 <body background="/Project/img/bg3.jpg">
 
-    <!-- Log in -->
-    
     <section class="testimonials text-center ">
         <div id="tableContainer1">
             <div id="tableContainer2">
 
-                <form method="POST" action="">
+                <form action="resetCode.php" method="POST" >
                     <table align="center">
+                            <th style="text-align:center" colspan="2">RECOVER PASSWORD</th>
                         <tr>
-                            <th><img style="height : 100px" src="/Project/img/avatar.svg"></th>
-                        <tr>
-                            <th style="text-align:center" colspan="2">CUSTOMER LOGIN</th>
-                        <tr>
-                            <th><i class="fa fa-user"></i>&nbsp &nbsp &nbsp<b>Username </b></th>
-
-                        <tr>
-                            <td><input type="text" name="username" placeholder="Username" required></td>
-
-                        <tr>
-                            <th><i class="fa fa-lock"></i>&nbsp &nbsp &nbsp<b>Password </b></th>
-                        <tr>
-                            <td><input type="password" name="password" placeholder="Password" required></td>
-                        <tr>
-                            <td style="text-align:center" colspan="2">
-                            <a href="../../ApplicationLayer/ManageCustomerInterface/resetPassword.php">Forgot Your Password?</a>
-                            </td>
-                        <tr>
-                            <td style="text-align:center" colspan="2">Don't have one? <a
-                                    href="../../ApplicationLayer/ManageCustomerInterface/signUp.php"> Create now! </a>
-                            </td>
+                            <td><input type="text" name="email" placeholder="Email" required></td>
                         <tr>
                             <td style="text-align:center, width:100%" colspan="2"><input type="submit"
-                                    value="Login &raquo;" name="login" class="btn btn-lg btn-primary"></td>
-
+                                    value="Email me recovery link &raquo;" name="recoverLink" class="btn btn-lg btn-primary"></td>
                     </table>
                 </form>
                 <br>
-
             </div>
         </div>
-
-        </div>
-
     </section>
-
 
 
     <!-- Bootstrap core JavaScript -->
