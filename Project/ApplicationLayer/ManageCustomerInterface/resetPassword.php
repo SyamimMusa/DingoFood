@@ -12,7 +12,7 @@ if($conn){
      die($conn);
 }
 
-require_once '../../ApplicationLayer/ManageCustomerInterface/resetController.php';
+require_once '../../BusinessServiceLayer/customerController.php';
 ?>
 
 <!DOCTYPE html>

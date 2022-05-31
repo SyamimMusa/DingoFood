@@ -1,4 +1,19 @@
-<?php require_once "../../ApplicationLayer/ManageCustomerInterface/resetController.php"; ?>
+<?php
+/* Database connection settings */
+$host = 'localhost';
+$user = 'root';
+$pass = '';
+$database = 'dingofood';
+//$mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);
+$conn=mysqli_connect($host,$user,$pass,$database);
+if($conn){
+}else{
+     echo"Connection not successful" . mysqli_error($conn);
+     die($conn);
+}
+
+require_once '../../BusinessServiceLayer/customerController.php';
+?>
 <?php 
 $email = $_SESSION['email'];
 if($email == false){
