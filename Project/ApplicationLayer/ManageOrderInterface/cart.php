@@ -59,7 +59,7 @@ if (isset($_POST ['delete'])) {
         type='text/css'>
     </link>
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/Project/css/home.css">
+    <link rel="stylesheet" href="../../css/home.css">
 
     <style>
     body,
@@ -70,21 +70,23 @@ if (isset($_POST ['delete'])) {
     }
 
     .hero-image {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/Project/img/dingoLogo4.jfif");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../img/dingoLogo4.jfif");
         height: 50%;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
     }
+
     .hero-image2 {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Project/img/wall4.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/wall4.jpg");
         height: 50%;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
     }
+
     .hero-text {
         text-align: center;
         position: absolute;
@@ -115,48 +117,49 @@ if (isset($_POST ['delete'])) {
 
     }
 
-/* Table header */
+    /* Table header */
 
-.tr_header th a{
-    color: black;
-  text-align: center;
-    text-decoration: none;
-}
+    .tr_header th a {
+        color: black;
+        text-align: center;
+        text-decoration: none;
+    }
 
-.tr_header{
-    background-color: #darkgrey ;
-}
+    .tr_header {
+        background-color: #darkgrey;
+    }
 
-.tr_header th{
-    color:black;
-    padding:10px 0px;
-    letter-spacing: 1px;
-  text-align: center;
-}
-
-    /* Table rows and columns */
-    #emp_table td{
-         padding:10px;
+    .tr_header th {
+        color: black;
+        padding: 10px 0px;
+        letter-spacing: 1px;
         text-align: center;
     }
-    #emp_table tr:nth-child(even){
-        background-color:lavender;
-        color:black;
+
+    /* Table rows and columns */
+    #emp_table td {
+        padding: 10px;
+        text-align: center;
     }
 
-    #content{
-        border:1px solid darkgrey;
-        border-radius:3px;
-        padding:5px;
+    #emp_table tr:nth-child(even) {
+        background-color: lavender;
+        color: black;
+    }
+
+    #content {
+        border: 1px solid darkgrey;
+        border-radius: 3px;
+        padding: 5px;
         width: 100%;
         margin: 0 auto;
     }
 
     /* */
-    #div_pagination{
-        width:100%;
-        margin-top:5px;
-        text-align:center;
+    #div_pagination {
+        width: 100%;
+        margin-top: 5px;
+        text-align: center;
     }
 
     /* Create two equal columns that floats next to each other */
@@ -174,6 +177,7 @@ if (isset($_POST ['delete'])) {
         display: table;
         clear: both;
     }
+
     .btn {
         display: inline-block;
         line-height: 50px;
@@ -189,20 +193,25 @@ if (isset($_POST ['delete'])) {
         color: #fff;
         font-family: inherit;
     }
+
     .btn--radius-2 {
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         border-radius: 5px;
     }
+
     .btn--red {
         background: #ff4b5a;
     }
+
     .btn--red:hover {
         background: #eb3746;
-    } 
+    }
+
     .btn--black {
         background: #000000;
     }
+
     .btn--black:hover {
         background: #333333;
     }
@@ -210,9 +219,11 @@ if (isset($_POST ['delete'])) {
     .wrapper {
         margin: 0 auto;
     }
+
     .wrapper--w790 {
         max-width: 1101px;
     }
+
     .title {
         font-size: 24px;
         text-transform: uppercase;
@@ -220,6 +231,7 @@ if (isset($_POST ['delete'])) {
         text-align: center;
         color: #fff;
     }
+
     .card {
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
@@ -235,7 +247,8 @@ if (isset($_POST ['delete'])) {
         -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
         -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
         box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-    }   
+    }
+
     .card-5 .card-heading {
         padding: 20px 0;
         background: #1a1a1a;
@@ -246,6 +259,7 @@ if (isset($_POST ['delete'])) {
         -moz-border-radius-topright: 10px;
         border-top-right-radius: 10px;
     }
+
     .card-5 .card-success {
         padding: 20px 0;
         background: #53d769;
@@ -256,33 +270,39 @@ if (isset($_POST ['delete'])) {
         -moz-border-radius-topright: 10px;
         border-top-right-radius: 10px;
     }
+
     .card-5 .card-body {
         padding: 52px 5px;
         padding-bottom: 73px;
     }
 
-  @media (max-width: 767px) {
-    .card-5 .card-body {
-        padding: 40px 30px;
-        padding-bottom: 50px;
+    @media (max-width: 767px) {
+        .card-5 .card-body {
+            padding: 40px 30px;
+            padding-bottom: 50px;
+        }
     }
-  }
+
     .bg--white {
-        background: #ffffff; }
+        background: #ffffff;
+    }
 
     .section-padding--lg {
-        padding: 50px 0; }
+        padding: 50px 0;
+    }
 
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .section-padding--lg {
-        padding: 100px 0; }
-}
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .section-padding--lg {
+            padding: 100px 0;
+        }
+    }
 
-@media only screen and (max-width: 767px) {
-    .section-padding--lg {
-        padding: 70px 0; }
-} 
-</style>
+    @media only screen and (max-width: 767px) {
+        .section-padding--lg {
+            padding: 70px 0;
+        }
+    }
+    </style>
 
 </head>
 
@@ -300,38 +320,45 @@ if (isset($_POST ['delete'])) {
 <div id="menu-nav">
     <div style="list-style-type: none;" id="navigation-bar">
         <ul>
-                <li><a href="/Project/ApplicationLayer/ManageCustomerInterface/home.php"><i class="fa fa-home"></i><span>Home</span></a></li>
-                <li><a href="/Project/ApplicationLayer/ManageMenuInterface/viewMenu.php"><i class="fa fa-book"></i><span>Menu</span></a></li>
-                <li><a href="/Project/ApplicationLayer/ManageOrderInterface/cart.php"><i class="fa fa-shopping-cart"></i><span>Cart</span></a></li>
-                <li><a href="/Project/ApplicationLayer/ManageRefundInterface/refundList.php"><i class="fa fa-money"></i><span>Refund</span></a></li>
-                <li><a href="/Project/ApplicationLayer/ManageCustomerInterface/logout.php" onclick="return confirm('Are you sure you want to sign out?')"><i class="fa fa-sign-out"></i><span>Sign Out</span></a></li>
-                
-                <a href="/Project/ApplicationLayer/ManageCustomerInterface/customerProfile.php" id="topnav-right"><i class="fa fa-user"></i><span>Hello <?php echo $name; ?></span></a>
-            </ul>
+            <li><a href="../../ApplicationLayer/ManageCustomerInterface/home.php"><i
+                        class="fa fa-home"></i><span>Home</span></a></li>
+            <li><a href="../../ApplicationLayer/ManageMenuInterface/viewMenu.php"><i
+                        class="fa fa-book"></i><span>Menu</span></a></li>
+            <li><a href="../../ApplicationLayer/ManageOrderInterface/cart.php"><i
+                        class="fa fa-shopping-cart"></i><span>Cart</span></a></li>
+            <li><a href="../../ApplicationLayer/ManageRefundInterface/refundList.php"><i
+                        class="fa fa-money"></i><span>Refund</span></a></li>
+            <li><a href="../../ApplicationLayer/ManageCustomerInterface/logout.php"
+                    onclick="return confirm('Are you sure you want to sign out?')"><i
+                        class="fa fa-sign-out"></i><span>Sign Out</span></a></li>
+
+            <a href="../../ApplicationLayer/ManageCustomerInterface/customerProfile.php" id="topnav-right"><i
+                    class="fa fa-user"></i><span>Hello <?php echo $name; ?></span></a>
+        </ul>
 
     </div>
 
 </div>
 <br><br>
-           
-          <div class="wrapper wrapper--w790">
-            <div class="card card-5">
-              <div class="card-heading">
-                <h2 class="title">Cart</h2>
-              </div>
-              <div class="card-body">
-                <center>
-                  <form action="" method="POST">
-                    <table id="emp_table" width="100%" border="0" >
-                      <tr class="tr_header" >
-                        <th>Name</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                        <th>Total</th>
-                        <th>Action</th>
-                      </tr>
 
-                      <?php
+<div class="wrapper wrapper--w790">
+    <div class="card card-5">
+        <div class="card-heading">
+            <h2 class="title">Cart</h2>
+        </div>
+        <div class="card-body">
+            <center>
+                <form action="" method="POST">
+                    <table id="emp_table" width="100%" border="0">
+                        <tr class="tr_header">
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Action</th>
+                        </tr>
+
+                        <?php
                       $i = 1;
                       if (is_array($data) || is_object($data)){
                         foreach($data as $row){
@@ -343,44 +370,46 @@ if (isset($_POST ['delete'])) {
                           $isrc = "../../img/"; 
                       ?>
 
-                      <?php
+                        <?php
                       echo 
                       "<tr>"
                       . "<td>".$row['order_detail']."</td>"                      
                       . "<td>".$row['order_price']."</td>"
                       . "<td><input type=\"number\" name=\"order_quantity\" value=\"".$row['order_quantity']."\"> </td>"
-                      . "<td>".$price."</td>";    ?>     
+                      . "<td>".$price."</td>";    ?>
 
-                      <td>
-                        <button class="btn btn--radius-2 btn--red" type="submit" name="update" value="Update">Update</button>
-                        <br>
-                        <input type="hidden" name="order_id" value="<?=$row['order_id']?>">
-                        <button class="btn btn--radius-2 btn--red" type="submit" name="delete" value="Delete">Delete</button>
-                        <br>
-                      </td>
-                            
-                      <?php
+                        <td>
+                            <button class="btn btn--radius-2 btn--red" type="submit" name="update"
+                                value="Update">Update</button>
+                            <br>
+                            <input type="hidden" name="order_id" value="<?=$row['order_id']?>">
+                            <button class="btn btn--radius-2 btn--red" type="submit" name="delete"
+                                value="Delete">Delete</button>
+                            <br>
+                        </td>
+
+                        <?php
                       $i++;
 
                       echo 
                       "</tr>";
                       ?>
-                          
 
-                      <?php
+
+                        <?php
                         }
                       }                
                       ?>
 
-                      <tr>
-                        <td><b>Total:</b></td>
-                        <td></td>
-                        <td><b><?=$total_quantity; ?></b></td>
-                        <td style="font-size: 30px; color: red;">
-                          <b>RM<?=$total_price; ?></b>
-                        </td>
-                        <td></td>
-                      </tr>
+                        <tr>
+                            <td><b>Total:</b></td>
+                            <td></td>
+                            <td><b><?=$total_quantity; ?></b></td>
+                            <td style="font-size: 30px; color: red;">
+                                <b>RM<?=$total_price; ?></b>
+                            </td>
+                            <td></td>
+                        </tr>
 
                     </table>
 
@@ -395,20 +424,26 @@ if (isset($_POST ['delete'])) {
                       
                     } ?>
 
-                   <br></br>
-                   <td><button style="width: 30%;" class="btn btn--radius-2 btn--black" input type="button" name = "checkout" value="checkout" onclick="location.href='/Project/ApplicationLayer/ManageOrderInterface/checkout.php'">Checkout</button></td>
-                   <td>&nbsp</td>
-                   <td><button style="width: 30%;" class="btn btn--radius-2 btn--black" input type="button" name = "checkout" value="checkout" onclick="location.href = '/Project/ApplicationLayer/ManageMenuInterface/viewMenu.php'">CONTINUE SHOPPING</button></td>
-                 
+                    <br></br>
+                    <td><button style="width: 30%;" class="btn btn--radius-2 btn--black" input type="button"
+                            name="checkout" value="checkout"
+                            onclick="location.href='../../ApplicationLayer/ManageOrderInterface/checkout.php'">Checkout</button>
+                    </td>
+                    <td>&nbsp</td>
+                    <td><button style="width: 30%;" class="btn btn--radius-2 btn--black" input type="button"
+                            name="checkout" value="checkout"
+                            onclick="location.href = '../../ApplicationLayer/ManageMenuInterface/viewMenu.php'">CONTINUE
+                            SHOPPING</button></td>
 
-                   
-                              
 
-        </form>
 
-      </center>
+
+
+                </form>
+
+            </center>
+        </div>
     </div>
-  </div>
 </div>
 </section>
 
@@ -447,13 +482,13 @@ if (isset($_POST ['delete'])) {
                     </form>
 
                  </div>
-                 <form class="" id="form3" method="post" action='/Project/ApplicationLayer/ManageOrderInterface/checkout.php' align="right">
+                 <form class="" id="form3" method="post" action='../../ApplicationLayer/ManageOrderInterface/checkout.php' align="right">
                    <button type="submit" name="checkout" class="btn btn-primary">CHECKOUT</button>
                  </form>
                  </div>
 
                  <div style="padding-top:10px;padding-left:500px">
-                   <button class="btn btn-dark" onclick="location.href = '/Project/ApplicationLayer/ManageMenuInterface/viewMenu.php' ">CONTINUE SHOPPING</button>
+                   <button class="btn btn-dark" onclick="location.href = '../../ApplicationLayer/ManageMenuInterface/viewMenu.php' ">CONTINUE SHOPPING</button>
 
                  </div>
 
@@ -461,33 +496,33 @@ if (isset($_POST ['delete'])) {
 
 
 
- <br><br><br>
-    <!-- Footer -->
-    <footer class="p-4 mb-0 bg-secondary">
-        <div class="container">
-          <center>
+<br><br><br>
+<!-- Footer -->
+<footer class="p-4 mb-0 bg-secondary">
+    <div class="container">
+        <center>
             <p class="m-0 text-center text-white">&copy; 2021 DINGO FOOD. All Rights Reserved</p>
-          </center>
-        </div>
-        <!-- /.container -->
-    </footer>
+        </center>
+    </div>
+    <!-- /.container -->
+</footer>
 
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="/Project/vendor/jquery/jquery.min.js"></script>
-    <script src="/Project/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="../../vendor/jquery/jquery.min.js"></script>
+<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="/Project/vendor/jquery-easing/jquery.easing.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Contact form JavaScript -->
-    <script src="/Project/js/jqBootstrapValidation.js"></script>
-    <script src="/Project/js/contact_me.js"></script>
+<!-- Contact form JavaScript -->
+<script src="../../js/jqBootstrapValidation.js"></script>
+<script src="../../js/contact_me.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="/Project/js/agency.min.js"></script>
+<!-- Custom scripts for this template -->
+<script src="../../js/agency.min.js"></script>
 
 
 
