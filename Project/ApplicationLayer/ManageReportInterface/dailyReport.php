@@ -329,6 +329,7 @@ ul {
         <div id="div_pagination">
             <a style="text-decoration:none; color: black; padding: 10px 50px;"  class="button button1" href="indexAdmin.php" ><span>Back</span></a>
         </div>
+        <button onclick="window.print()" class="printbutton" >Print</button>
     </form>
 </div>
 <!-- Footer -->
