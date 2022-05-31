@@ -14,10 +14,10 @@ if($conn){
      die($conn);
 }
 
-require_once '../../BusinessServiceLayer/controller/orderController.php';
-require_once 'C:/xampp/htdocs/Project/BusinessServiceLayer/controller/menuController.php';
-require_once '../../libs/database.php';
-require_once '../../libs/custSession.php';
+require_once 'C:/xampp/htdocs/DingoFood/DingoFood/Project/BusinessServiceLayer/controller/orderController.php';
+require_once 'C:/xampp/htdocs/DingoFood/DingoFood/Project/BusinessServiceLayer/controller/menuController.php';
+require_once 'C:/xampp/htdocs/DingoFood/DingoFood/Project/libs/database.php';
+require_once 'C:/xampp/htdocs/DingoFood/DingoFood/Project/libs/custSession.php';
 
 
 $orders = new orderController();
@@ -170,7 +170,7 @@ ul {
     <input type="hidden" name="menu_price" value="<?= $row['menu_price']?>">
     <input type="hidden" name="menu_image" value="<?= $row['menu_image']?>">
     <br><p>Quantity : <br> <br><input type="number" id="order_quantity" name="order_quantity" class="form-control" value="1" min="1" max="5"></p>
-
+    <br><p>Any Special Order? : <br><input type="text" id="order_special" name="order_special" class="form-control"></p>
     <br>
                   
 
