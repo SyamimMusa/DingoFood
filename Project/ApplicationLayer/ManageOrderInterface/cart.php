@@ -329,6 +329,7 @@ if (isset($_POST ['delete'])) {
                         <th>Quantity</th>
                         <th>Total</th>
                         <th>Action</th>
+                        <th>Special Order</th>
                       </tr>
 
                       <?php
