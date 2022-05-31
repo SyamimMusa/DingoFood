@@ -124,38 +124,21 @@ body {
     <section class="testimonials text-center ">
         <div id="tableContainer1">
             <div id="tableContainer2">
-
-                <form action="resetCode.php" method="POST" autocomplete="off">
-                    <table align="center">
-                        <h2 class="text-center">CODE VERIFICATION</h2>
-                        <?php 
-                        if(isset($_SESSION['info'])){
-                            ?>
-                            <div class="alert alert-success text-center" style="padding: 0.4rem 0.4rem">
-                                <?php echo $_SESSION['info']; ?>
-                            </div>
-                        <?php
-                        }
-                        ?>
+                <?php 
+                if(isset($_SESSION['info'])){
+                    ?>
+                    <div class="alert alert-success text-center">
+                    <?php echo $_SESSION['info']; ?>
+                    </div>
                     <?php
-                    if(count($errors) > 0){
-                        ?>
-                        <div class="alert alert-danger text-center">
-                            <?php
-                            foreach($errors as $showerror){
-                                echo $showerror;
-                            }
-                            ?>
-                        </div>
-                        <?php
-                        }
-                        ?>
-                        <div class="form-group">
-                        <input class="form-control" type="number" name="otp" placeholder="Enter code" required>
-                        </div>
-                        <div class="form-group">
-                        <input class="form-control button" type="submit" name="checkReset" value="Submit">
-                        </div>
+                }
+                ?>
+
+                <form action="login.php" method="POST" >
+                    <table align="center">
+                    <div class="form-group">
+                        <input class="form-control button" type="submit" name="loginNow" value="Login Now">
+                    </div>
                     </table>
                 </form>
                 <br>

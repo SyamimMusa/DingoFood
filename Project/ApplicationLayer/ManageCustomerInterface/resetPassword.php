@@ -11,6 +11,8 @@ if($conn){
      echo"Connection not successful" . mysqli_error($conn);
      die($conn);
 }
+
+require_once '../../ApplicationLayer/ManageCustomerInterface/resetController.php';
 ?>
 
 <!DOCTYPE html>
@@ -127,28 +129,48 @@ body {
 }
 </style>
 
-<!-- RESET PASSWORD INTERFACE -->
 
 <body background="/Project/img/bg3.jpg">
 
+    
     <section class="testimonials text-center ">
         <div id="tableContainer1">
             <div id="tableContainer2">
 
-                <form action="resetCode.php" method="POST" >
+                <form action="resetPassword.php" method="POST" autocomplete="">
                     <table align="center">
-                            <th style="text-align:center" colspan="2">RECOVER PASSWORD</th>
-                        <tr>
-                            <td><input type="text" name="email" placeholder="Email" required></td>
-                        <tr>
-                            <td style="text-align:center, width:100%" colspan="2"><input type="submit"
-                                    value="Email me recovery link &raquo;" name="recoverLink" class="btn btn-lg btn-primary"></td>
+                        <h2 class="text-center">FORGOT PASSWORD</h2>
+                        <p class="text-center">Enter your email address</p>
+                        <?php
+                            if(count($errors) > 0){
+                                ?>
+                                <div class="alert alert-danger text-center">
+                                    <?php 
+                                        foreach($errors as $error){
+                                            echo $error;
+                                        }
+                                    ?>
+                                </div>
+                                <?php
+                            }
+                        ?>
+                        <div class="form-group">
+                            <input class="form-control" type="email" name="email" placeholder="Enter email address" required value="<?php echo $email ?>">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control button" type="submit" name="checkEmail" value="Continue">
+                        </div>
                     </table>
                 </form>
                 <br>
+
             </div>
         </div>
+
+        </div>
+
     </section>
+
 
 
     <!-- Bootstrap core JavaScript -->

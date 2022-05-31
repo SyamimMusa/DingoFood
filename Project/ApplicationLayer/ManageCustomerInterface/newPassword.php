@@ -125,18 +125,18 @@ body {
         <div id="tableContainer1">
             <div id="tableContainer2">
 
-                <form action="resetCode.php" method="POST" autocomplete="off">
+                <form action="newPassword.php" method="POST" autocomplete="off">
                     <table align="center">
-                        <h2 class="text-center">CODE VERIFICATION</h2>
+                        <h2 class="text-center">NEW PASSWORD</h2>
                         <?php 
-                        if(isset($_SESSION['info'])){
-                            ?>
-                            <div class="alert alert-success text-center" style="padding: 0.4rem 0.4rem">
-                                <?php echo $_SESSION['info']; ?>
-                            </div>
-                        <?php
-                        }
+                    if(isset($_SESSION['info'])){
                         ?>
+                        <div class="alert alert-success text-center">
+                            <?php echo $_SESSION['info']; ?>
+                        </div>
+                        <?php
+                    }
+                    ?>
                     <?php
                     if(count($errors) > 0){
                         ?>
@@ -148,14 +148,17 @@ body {
                             ?>
                         </div>
                         <?php
-                        }
-                        ?>
-                        <div class="form-group">
-                        <input class="form-control" type="number" name="otp" placeholder="Enter code" required>
-                        </div>
-                        <div class="form-group">
-                        <input class="form-control button" type="submit" name="checkReset" value="Submit">
-                        </div>
+                    }
+                    ?>
+                    <div class="form-group">
+                        <input class="form-control" type="password" name="password" placeholder="Create new password" required>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="password" name="cpassword" placeholder="Confirm your password" required>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control button" type="submit" name="changePassword" value="Change">
+                    </div>
                     </table>
                 </form>
                 <br>
