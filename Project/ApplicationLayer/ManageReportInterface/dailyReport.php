@@ -237,6 +237,12 @@ ul {
     color: white;
 }
 
+.printbutton
+{
+    background-color: white;
+    color: white;
+}
+
 <!-- /BUTTON STYLE -->
 
 </style>
