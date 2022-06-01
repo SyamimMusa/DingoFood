@@ -287,7 +287,10 @@ ul {
 	<div id="centered">
 	<a class="button button1" href="indexAdmin.php" style="text-decoration:none; color: black;padding: 10px 50px;"><span>Back</span></a>
 	</div>
+
   <button onclick="window.print()" class="printbutton" >Print</button>
+
+  
   <!-- Footer -->
     <footer class="p-4 mb-0 bg-secondary">
      <div class="container">
