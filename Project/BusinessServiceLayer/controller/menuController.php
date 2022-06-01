@@ -1,6 +1,5 @@
 <?php
-require_once 'C:/xampp/htdocs/Project/BusinessServiceLayer/model/menuModel.php';
-
+include 'C:/xampp/htdocs/DingoFood/Project/BusinessServiceLayer/model/menuModel.php';
 class menuController{
 
     function addMenu(){

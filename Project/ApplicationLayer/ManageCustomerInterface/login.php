@@ -37,16 +37,16 @@ if(isset($_POST['login']))
     <title>Log In</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/Project/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="/Project/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="/Project/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../../vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
         type="text/css">
 
     <!-- Custom styles for this template -->
-    <link href="/Project/css/landing-page.min.css" rel="stylesheet">
+    <link href="../../css/landing-page.min.css" rel="stylesheet">
 
 </head>
 
@@ -140,10 +140,10 @@ body {
 
 <!-- SIGNUP BACKGROUND -->
 
-<body background="/Project/img/bg3.jpg">
+<body background="../../img/bg3.jpg">
 
     <!-- Log in -->
-    
+
     <section class="testimonials text-center ">
         <div id="tableContainer1">
             <div id="tableContainer2">
@@ -151,7 +151,7 @@ body {
                 <form method="POST" action="">
                     <table align="center">
                         <tr>
-                            <th><img style="height : 100px" src="/Project/img/avatar.svg"></th>
+                            <th><img style="height : 100px" src="../../img/avatar.svg"></th>
                         <tr>
                             <th style="text-align:center" colspan="2">CUSTOMER LOGIN</th>
                         <tr>
@@ -166,7 +166,8 @@ body {
                             <td><input type="password" name="password" placeholder="Password" required></td>
                         <tr>
                             <td style="text-align:center" colspan="2">
-                            <a href="../../ApplicationLayer/ManageCustomerInterface/resetPassword.php">Forgot Your Password?</a>
+                                <a href="../../ApplicationLayer/ManageCustomerInterface/resetPassword.php">Forgot Your
+                                    Password?</a>
                             </td>
                         <tr>
                             <td style="text-align:center" colspan="2">Don't have one? <a
@@ -190,8 +191,8 @@ body {
 
 
     <!-- Bootstrap core JavaScript -->
-    <script src="/Project/vendor/jquery/jquery.min.js"></script>
-    <script src="/Project/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

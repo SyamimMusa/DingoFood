@@ -14,7 +14,12 @@ if($conn){
 
 require_once '../../BusinessServiceLayer/customerController.php';
 ?>
-
+<?php 
+$email = $_SESSION['email'];
+if($email == false){
+  header('Location: /Project/ApplicationLayer/ManageCustomerInterface/login.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -129,37 +134,26 @@ body {
 }
 </style>
 
-
 <body background="/Project/img/bg3.jpg">
-
     
     <section class="testimonials text-center ">
         <div id="tableContainer1">
             <div id="tableContainer2">
+                <?php 
+                if(isset($_SESSION['info'])){
+                    ?>
+                    <div class="alert alert-success text-center">
+                    <?php echo $_SESSION['info']; ?>
+                    </div>
+                    <?php
+                }
+                ?>
 
-                <form action="resetPassword.php" method="POST" autocomplete="">
+                <form action="login.php" method="POST" >
                     <table align="center">
-                        <h2 class="text-center">FORGOT PASSWORD</h2>
-                        <p class="text-center">Enter your email address</p>
-                        <?php
-                            if(count($errors) > 0){
-                                ?>
-                                <div class="alert alert-danger text-center">
-                                    <?php 
-                                        foreach($errors as $error){
-                                            echo $error;
-                                        }
-                                    ?>
-                                </div>
-                                <?php
-                            }
-                        ?>
-                        <div class="form-group">
-                            <input class="form-control" type="email" name="email" placeholder="Enter email address" required value="<?php echo $email ?>">
-                        </div>
-                        <div class="form-group">
-                            <input class="form-control button" type="submit" name="checkEmail" value="Continue">
-                        </div>
+                    <div class="form-group">
+                        <input class="form-control button" type="submit" name="loginNow" value="Login Now">
+                    </div>
                     </table>
                 </form>
                 <br>
