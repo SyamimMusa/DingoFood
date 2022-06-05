@@ -15,6 +15,7 @@ class orderController{
         $orders->order_price = $_POST['menu_price'];
         $orders->order_image = $_POST['menu_image'];
         $orders->order_time = date("h:i:sa");
+        $orders->order_special = $_POST['order_special'];
         
         
         if ($orders->AddOrders() > 0){

@@ -3,7 +3,7 @@ require_once 'C:/xampp/htdocs/DingoFood/DingoFood/Project/libs/database.php';
 
 // public variable - NUREEN
 class orderModel{
-    public $order_id,$order_detail,$order_quantity,$order_price,$order_image,$order_time; 
+    public $order_id,$order_detail,$order_quantity,$order_price,$order_image,$order_time,$order_special; 
     
     //To insert order into Orders table - NUREEN
     function AddOrders(){
