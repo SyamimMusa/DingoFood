@@ -7,8 +7,8 @@ class orderModel{
     
     //To insert order into Orders table - NUREEN
     function AddOrders(){
-        $sql = "insert into orders(order_id,customer_id,order_detail,order_quantity,order_price,order_image,order_time) values(:order_id,:customer_id,:order_detail, :order_quantity, :order_price, :order_image, :order_time)";
-        $args = [':order_id'=>$this->order_id,'customer_id'=>$this->customer_id,':order_detail'=>$this->order_detail, ':order_quantity'=>$this->order_quantity, ':order_price'=>$this->order_price,':order_image'=>$this->order_image, ':order_time'=>$this->order_time];
+        $sql = "insert into orders(order_id,customer_id,order_detail,order_quantity,order_price,order_image,order_time,order_special) values(:order_id,:customer_id,:order_detail, :order_quantity, :order_price, :order_image, :order_time, :order_special)";
+        $args = [':order_id'=>$this->order_id,'customer_id'=>$this->customer_id,':order_detail'=>$this->order_detail, ':order_quantity'=>$this->order_quantity, ':order_price'=>$this->order_price,':order_image'=>$this->order_image, ':order_time'=>$this->order_time, ':order_special'=>$this->order_special];
         $stmt = DB::run($sql, $args);
         $count = $stmt->rowCount();
         return $count;

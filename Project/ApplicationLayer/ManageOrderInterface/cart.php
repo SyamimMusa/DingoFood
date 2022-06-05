@@ -13,10 +13,10 @@ if($conn){
      die($conn);
 }
 
-require_once '../../BusinessServiceLayer/controller/customerController.php';
-require_once '../../libs/database.php';
-require_once '../../libs/custSession.php';
-require_once '../../BusinessServiceLayer/controller/orderController.php';
+require_once 'C:/xampp/htdocs/DingoFood/DingoFood/Project/BusinessServiceLayer/controller/customerController.php';
+require_once 'C:/xampp/htdocs/DingoFood/DingoFood/Project/libs/database.php';
+require_once 'C:/xampp/htdocs/DingoFood/DingoFood/Project/libs/custSession.php';
+require_once 'C:/xampp/htdocs/DingoFood/DingoFood/Project/BusinessServiceLayer/controller/orderController.php';
 
 $orders = new orderController();
 $customer = new customerController();
@@ -328,8 +328,8 @@ if (isset($_POST ['delete'])) {
                         <th>Price</th>
                         <th>Quantity</th>
                         <th>Total</th>
-                        <th>Action</th>
                         <th>Special Order</th>
+                        <th>Action</th>
                       </tr>
 
                       <?php
@@ -350,7 +350,10 @@ if (isset($_POST ['delete'])) {
                       . "<td>".$row['order_detail']."</td>"                      
                       . "<td>".$row['order_price']."</td>"
                       . "<td><input type=\"number\" name=\"order_quantity\" value=\"".$row['order_quantity']."\"> </td>"
-                      . "<td>".$price."</td>";    ?>     
+                      . "<td>".$price."</td>"
+                      . "<td>".$row['order_special']."</td>";
+                      
+                    ?>     
 
                       <td>
                         <button class="btn btn--radius-2 btn--red" type="submit" name="update" value="Update">Update</button>
@@ -359,7 +362,9 @@ if (isset($_POST ['delete'])) {
                         <button class="btn btn--radius-2 btn--red" type="submit" name="delete" value="Delete">Delete</button>
                         <br>
                       </td>
-                            
+                           
+                     
+
                       <?php
                       $i++;
 

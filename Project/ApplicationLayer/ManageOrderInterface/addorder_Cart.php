@@ -170,7 +170,7 @@ ul {
     <input type="hidden" name="menu_price" value="<?= $row['menu_price']?>">
     <input type="hidden" name="menu_image" value="<?= $row['menu_image']?>">
     <br><p>Quantity : <br> <br><input type="number" id="order_quantity" name="order_quantity" class="form-control" value="1" min="1" max="5"></p>
-    <br><p>Any Special Order? : <br><input type="text" id="order_special" name="order_special" class="form-control"></p>
+    <br><p> Special Order? : <br><input type="text" id="order_special" name="order_special" class="form-control"></p>
     <br>
                   
 
@@ -179,7 +179,6 @@ ul {
                     ?>
                     <input type="hidden" name="name" value="<?=$row['menu_name']?>">
                     <input type="hidden" name="price" value="<?=$row['menu_price']?>">
-                  
                     <input type="hidden" name="image" value="<?=$row['menu_image']?>">
                     <!-- <input type="hidden" name="order_quantity" value="<?=$row['order_quantity']?>"> -->
                    
