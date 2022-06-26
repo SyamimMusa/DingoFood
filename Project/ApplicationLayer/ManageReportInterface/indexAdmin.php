@@ -5,7 +5,7 @@ session_start();
 $host = 'localhost';
 $user = 'root';
 $pass = '';
-$database = 'kinderpal';
+$database = 'dingofood';
 //$mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);
 $conn=mysqli_connect($host,$user,$pass,$database);
 if($conn){
@@ -203,14 +203,14 @@ a, a:hover { color: black; text-decoration : none; }
   <h2 style="font-size:3em; font-family:Aclonica;">Sales Report</h2>
   	<br>
     <div class="btn-group" style="display:block">
-    <h2><a style="width: 40%" type="submit" href="dailyReport.php">Daily</a></h2>
+    <h2><a style="width: 40%" type="submit" href="/DingoFood/Project/ApplicationLayer/ManageReportInterface/dailyReport.php">Daily</a></h2>
     </div>
 
   <br>
   <br>
   	
 <div class="btn-group" style="display:block">
-<h2><a style="width: 40%" type="submit" href="weeklyReport.php">Weekly</a></h2>
+<h2><a style="width: 40%" type="submit" href="/DingoFood/Project/ApplicationLayer/ManageReportInterface/weeklyReport.php">Weekly</a></h2>
 
   <br>
   
@@ -218,7 +218,7 @@ a, a:hover { color: black; text-decoration : none; }
   <br>
 
  <div class="btn-group" style="display:block">
-  <h2><a style="width: 40%" type="submit" href="monthlyreport.php">Monthly</a></h2>
+  <h2><a style="width: 40%" type="submit" href="/DingoFood/Project/ApplicationLayer/ManageReportInterface/monthlyreport.php">Monthly</a></h2>
 
   <br>
 

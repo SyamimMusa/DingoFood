@@ -237,6 +237,31 @@ ul {
     color: white;
 }
 
+.printbutton {
+	box-shadow:inset 0px 39px 0px -24px #e67a73;
+	background:linear-gradient(to bottom, #e4685d 5%, #eb675e 100%);
+	background-color:#e4685d;
+	border-radius:4px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+    top:10px;
+}
+.printbutton:hover {
+	background:linear-gradient(to bottom, #eb675e 5%, #e4685d 100%);
+	background-color:#eb675e;
+}
+.printbutton:active {
+	position:relative;
+	top:1px;
+}
+
 
 <!-- /BUTTON STYLE -->
 
@@ -247,6 +272,7 @@ ul {
   <div class="hero-text">
     <h1 style="font-size:70px">D I N G O F O O D</h1>
     <p style="color: black">Everything's Fresh Here at DingoFood</p><br>
+    <button onclick="window.print()" class="printbutton" >Print</button>
   </div>
 </div>
 
@@ -331,7 +357,6 @@ ul {
             <a style="text-decoration:none; color: black; padding: 10px 50px;"  class="button button1" href="indexAdmin.php" ><span>Back</span></a>
         </div>
 
-        <button onclick="window.print()" class="printbutton" >Print</button>
         
     </form>
 </div>
